@@ -1,0 +1,1393 @@
+/* board.css
+   Styles for /board/ — the media wall + modal + search/filter bar.
+   Colors and type follow the existing style.css palette:
+   #222 page bg, #101010 panel/card bg, #62CBB8 teal accent,
+   #F9F976 yellow accent, #ADADAD/#999 muted text.
+
+   The search box and filter chip rules below intentionally mirror
+   #searchWrapper / #calendarSettingsBar / #calendarFilterPanel / #activeFilters
+   from style.css so the board's search + filter UI matches the calendar
+   page's look — just scoped to board-prefixed ids so this page's markup
+   stays consistent with the rest of the "board" naming used here.
+*/
+
+#boardSpace.page {
+	align-items: flex-start;
+}
+
+#boardSpace .main,
+#boardContent .main {
+	margin-bottom: 0 !important;
+}
+
+/* --- Search + filter bar ----------------------------------------------- */
+
+#boardSettingsBar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+#boardSearchWrapper {
+	position: relative;
+	display: inline-flex;
+	width: 75%;
+	max-width: 825px;
+	height: 70px;
+}
+
+#boardSearch {
+	width: 100%;
+	min-height: 60px;
+	background-color: #101010;
+	border: 3px solid #333;
+	border-radius: 9px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-size: 16px;
+	padding-right: 60px;
+}
+
+#boardSearch:focus {
+	border-color: #62CBB8;
+}
+
+#boardSearchWrapper.hasValue #boardSearch {
+	border: 3px solid #F9F976;
+}
+
+#boardSearchGo {
+	height: 100%;
+	position: absolute;
+	right: 16px;
+	background: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#boardSearchReset {
+	display: none;
+}
+
+#boardSearchWrapper.hasValue #boardSearchGo {
+	display: none;
+}
+
+#boardSearchWrapper.hasValue #boardSearchReset {
+	height: 100%;
+	position: absolute;
+	right: 16px;
+	background: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#boardSearchGo .icon, #boardSearchReset .icon {
+	width: 40px;
+	height: 40px;
+}
+
+#boardSettingsBar .filter-toggle {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: none;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin-right: 6%;
+}
+
+#boardSettingsBar .filter-toggle .icon {
+	width: 32px;
+	height: 32px;
+}
+
+#boardSettingsBar .filter-toggle.active {
+	border: 1px solid #F9F976;
+	color: #F9F976;
+}
+
+#boardFilterPanel .filter-panel {
+	margin-top: 16px;
+	margin-bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+#boardFilterPanel .filter-group-label {
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #FCFCFC;
+	margin-bottom: 8px;
+}
+
+#boardFilterPanel .filter-row {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+#boardFilterPanel .chip {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	padding: 6px 12px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 20px;
+	color: #FFF;
+	cursor: pointer;
+	background: transparent;
+	transition: all .15s ease;
+}
+
+#boardFilterPanel .chip.active {
+	border-color: #F9F976 !important;
+	color: #F9F976;
+}
+
+/* Genre chips in the filter panel get the same per-genre --genre-color
+   treatment as the calendar's/acts page's own genre filter chips. */
+#boardFilterPanel .chip[style*="--genre-color"] {
+	border-color: var(--genre-color);
+	color: var(--genre-color);
+}
+
+#boardFilterPanel .chip[style*="--genre-color"].active {
+	background: var(--genre-color) !important;
+	border-color: var(--genre-color) !important;
+	color: #101010;
+}
+
+/* Posts (All/Shots/Galleries/Reports) — segmented-control look instead of
+   pill chips, matching #calendarToggle's Day/Week toggle on the main
+   calendar page (style.css). Rescoped to #boardPostTypeFilters since this
+   row overrides the default .filter-row flex/gap used by the other filter
+   groups. Replaces the old Photos/Videos "Shots" format toggle now that a
+   post can hold more than one photo/video (galleries, reports). */
+#boardPostTypeFilters {
+	display: inline-flex;
+	flex-wrap: nowrap;
+	gap: 0 !important;
+	border-radius: 9px;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	background: rgba(0, 0, 0, 0.25);
+	width: fit-content;
+}
+
+#boardPostTypeFilters .toggle-button {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	color: #F9F976;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	background: rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+	height: 100%;
+}
+
+#boardPostTypeFilters .toggle-button:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+#boardPostTypeFilters .toggle-button:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+#boardPostTypeFilters .toggle-button.active {
+	color: #101010;
+	background: #F9F976;
+	font-weight: 900;
+	border: 1px solid #F9F976;
+}
+
+#boardFilterPanel .chip-show-all {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	border-style: none;
+	color: #F9F976;
+	padding: 8px 0;
+	padding-left: 8px;
+	margin-right: 80px;
+}
+
+#boardActiveFiltersWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 8px;
+	margin-bottom: 32px;
+}
+
+#boardActiveFiltersWrapper #boardActiveFiltersLabel {
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+}
+
+#boardActiveFilters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+}
+
+#boardActiveFilters .chip {
+	display: inline-flex;
+	align-items: baseline;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	background: transparent;
+	border-style: none;
+	cursor: pointer;
+	gap: 8px;
+}
+
+#boardActiveFilters .chip-remove {
+	color: #FF6262;
+	font-size: 20px;
+}
+
+#boardActiveFilters .chip-reset {
+	text-decoration: underline;
+	color: #FFF;
+}
+
+/* Heading + sort button on one line. The heading's spacing moves to the row so
+   the button lines up with the text. */
+#boardContent .main .boardSubHeadRow {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 40px;
+	margin-bottom: 16px;
+}
+
+#boardContent .main .boardSubHeadRow .subHead {
+	margin: 0 !important;
+}
+
+/* Intro line on the left, New Post on the right (wraps under it on small screens) */
+.boardIntro {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px 24px;
+	margin-bottom: 16px !important;
+}
+
+.boardIntro p {
+	margin: 0;
+}
+
+/* Same look as the profile page's New Post / Edit Profile buttons */
+.boardNewPost {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 12px 20px;
+	background: transparent;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.boardNewPost .icon {
+	width: 20px;
+	height: 20px;
+	transition: none;
+}
+
+.boardNewPost[hidden] {
+	display: none;
+}
+
+.boardNewPost:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* --- Sort menu ----------------------------------------------------------- */
+
+.boardSort {
+	position: relative;
+	display: flex;
+}
+
+.boardSortButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	background: none;
+	border: 1px solid transparent;
+	border-radius: 9px;
+	color: #FFF;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease;
+}
+
+.icon.iconSettings {
+	width: 22px;
+	height: 22px;
+	background-color: #F9F976;
+	-webkit-mask-image: url('../images/icons/settings.svg');
+	mask-image: url('../images/icons/settings.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.boardSortButton.open {
+	border-color: #F9F976;
+	color: #F9F976;
+}
+
+.boardSortButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Same yellow panel as the post ⋮ menus */
+.boardSortMenu {
+	position: absolute;
+	top: calc(100% + 8px);
+	right: -80px; /* opens back toward the heading, so it never runs off the right edge */
+	z-index: 30;
+	width: 200px;
+	margin: 0;
+	padding: 8px;
+	list-style: none;
+	background: #F9F976;
+	border-radius: 9px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.boardSortMenu[hidden] {
+	display: none;
+}
+
+.boardSortOption {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	padding: 10px 12px;
+	background: none;
+	border: none;
+	border-radius: 6px;
+	color: #101010;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+/* Check mark on the current sort; the empty slot keeps the labels lined up */
+.boardSortOption::before {
+	content: "";
+	flex-shrink: 0;
+	width: 5px;
+	height: 10px;
+	margin: -3px 3px 0 3px;
+	border: solid transparent;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.boardSortOption[aria-checked="true"] {
+	font-weight: 800;
+}
+
+.boardSortOption[aria-checked="true"]::before {
+	border-color: currentColor;
+}
+
+.boardSortOption:focus-visible {
+	outline: 2px solid #101010;
+	outline-offset: -2px;
+}
+
+/* --- Tile / row view toggle ---------------------------------------------- */
+/* Same yellow segmented look as the Posts toggle, pushed to the far right */
+
+.boardViewToggle {
+	display: inline-flex;
+	flex-shrink: 0;
+	margin-left: auto;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	border-radius: 9px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.boardViewButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 36px;
+	padding: 0;
+	background: none;
+	border: none;
+	color: #F9F976;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.boardViewButton:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+.boardViewButton:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+.boardViewButton.active {
+	background: #F9F976;
+	color: #101010;
+}
+
+.boardViewButton .icon {
+	width: 20px;
+	height: 20px;
+	background-color: currentColor;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.iconViewTiles {
+	-webkit-mask-image: url('../images/icons/grid.svg');
+	mask-image: url('../images/icons/grid.svg');
+}
+
+.iconViewRows {
+	-webkit-mask-image: url('../images/icons/rows.svg');
+	mask-image: url('../images/icons/rows.svg');
+}
+
+.boardViewButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+	#boardSettingsBar .filter-toggle:hover {
+		color: #F9F976;
+	}
+
+	#boardFilterPanel .chip:hover {
+		border-color: #62CBB8;
+	}
+
+	#boardFilterPanel .chip[data-filter="genre"]:hover {
+		border-color: var(--genre-color);
+		filter: brightness(1.2);
+	}
+
+	#boardFilterPanel .chip-show-all:hover {
+		text-decoration: underline;
+	}
+
+	#boardActiveFilters .chip-reset:hover {
+		color: #F9F976;
+	}
+
+	.boardSortButton:hover {
+		border-color: #F9F976;
+	}
+
+	.boardSortOption:hover {
+		background: #101010;
+		color: #F9F976;
+	}
+
+	.boardViewButton:not(.active):hover {
+		background: rgba(249, 249, 118, 0.15);
+	}
+}
+
+@media screen and (max-width: 984px) {
+	#boardSettingsBar .filter-toggle {
+		margin-right: 3%;
+	}
+}
+
+@media screen and (max-width: 774px) {
+	#boardSettingsBar {
+		justify-content: space-between;
+	}
+
+	#boardFilterToggle {
+		margin-top: 4px;
+	}
+
+	.buttonLabel {
+		display: none;
+	}
+
+	#boardSettingsBar .filter-toggle {
+		margin-right: 6%;
+	}
+
+	#boardContent .main .boardSubHeadRow {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width:535px){
+	#boardSearch {
+		font-size: 14px;
+		padding-right: 32px;
+	}
+
+	#boardSearchGo .icon, #boardSearchReset .icon {
+		width: 32px !important;
+		height: 32px !important;
+	}
+
+	#boardSearchGo, #boardSearchWrapper.hasValue #boardSearchReset {
+		top: 0;
+		right: 8px;
+	}
+
+	#boardSearchWrapper {
+		width: 72%;
+	}
+
+	#boardSettingsBar .filter-toggle {
+		margin-right: 2%;
+	}
+}
+
+
+/* --- Media grid ---------------------------------------------------------- */
+
+#boardGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.boardTile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0;
+	border: 3px solid #333;
+	border-radius: 9px;
+	overflow: hidden;
+	background: #101010;
+	cursor: pointer;
+	font: inherit;
+	color: inherit;
+	text-align: left;
+}
+
+.boardTileThumb {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 4/3;
+	overflow: hidden;
+	background-color: #101010;
+}
+
+.boardTileThumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.boardTileThumb-empty {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #999;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+}
+
+.boardTilePlayIcon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 48px;
+	height: 48px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background-color: rgba(16, 16, 16, 0.65);
+	pointer-events: none;
+}
+
+.boardTilePlayIcon::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 56%;
+	transform: translate(-50%, -50%);
+	border-style: solid;
+	border-width: 9px 0 9px 15px;
+	border-color: transparent transparent transparent #FFF;
+}
+
+/* Small top-right badge on gallery/report tiles hinting there's more than
+   one piece of media behind the cover thumbnail — purely decorative, so it
+   fails silently (no badge) if it doesn't render on some older browser. */
+.boardTileStackBadge {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 22px;
+	height: 22px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.65);
+	box-shadow: -3px 3px 0 0 rgba(255, 255, 255, 0.4);
+	pointer-events: none;
+}
+
+.boardTileThumb-empty {
+	min-height: 120px;
+}
+
+/* Title, by, type + counts */
+.boardTileInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	flex: 1;
+	width: 100%;
+	padding: 10px 12px 12px;
+}
+
+.boardTileCaption {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #FFF;
+	overflow-wrap: anywhere;
+}
+
+/* Discussions have no picture: a few lines of the opening text fill in instead */
+.boardTileExcerpt {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	margin-top: 6px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	line-height: 1.45;
+	color: #DADADA;
+	white-space: pre-line;
+}
+
+.boardTileBy {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	line-height: 1.3;
+	color: #ADADAD;
+	overflow-wrap: anywhere;
+}
+
+/* Max badge after the username, sized down from its 24px default
+   (three classes so it beats crwd-ui.css, which loads later) */
+.boardTileBy .icon.crwdMaxBadge {
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+	vertical-align: -3px;
+}
+
+/* Post type on the left, hype/comment counts on the right, pinned to the bottom */
+.boardTileFoot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-top: auto;
+	padding-top: 8px;
+}
+
+.boardTilePostType {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	line-height: 1.2;
+	color: #F9F976;
+}
+
+.boardTileCounts {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.boardTileCount {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	line-height: 1;
+	color: #ADADAD;
+}
+
+.boardTileCount .icon {
+	width: 16px;
+	height: 16px;
+}
+
+.boardStateMsg {
+	width: 100%;
+	margin: 0px 0px 40px;
+	text-align: center;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+}
+
+#boardEnd a {
+	color: #62CBB8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	#boardEnd a:hover {
+		text-decoration: underline;
+	}
+}
+
+.board-load {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: 1px solid #F9F976;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: fit-content;
+	margin: 0 auto 60px;
+}
+
+.board-load[hidden] {
+	display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.boardTile:hover,
+	.boardTile:focus-visible {
+		transform: translateY(-2px);
+		border-color: #62CBB8;
+	}
+}
+
+/* Responsive: 2-up on tablet, 1-up on phones (matches .main breakpoints) */
+@media screen and (max-width: 774px) {
+	#boardGrid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+}
+
+@media screen and (max-width: 535px) {
+	.boardTileCaption {
+		font-size: 16px;
+	}
+
+	.boardTileExcerpt {
+		font-size: 13px;
+	}
+}
+
+/* --- Row view: full-width tiles, thumbnail left, info right ---------------
+   #boardGrid.isRows outranks the #boardGrid breakpoint rules above, so it
+   stays one column at every width. */
+
+#boardGrid.isRows {
+	grid-template-columns: 1fr;
+	gap: 16px;
+}
+
+#boardGrid.isRows .boardTile {
+	flex-direction: row;
+	align-items: stretch;
+	max-height: 160px;
+}
+
+/* Fixed-width thumb that stretches to the tile's height (cropped by object-fit) */
+#boardGrid.isRows .boardTileThumb {
+	flex: 0 0 280px;
+	width: 280px;
+	aspect-ratio: auto;
+	min-height: 168px;
+}
+
+#boardGrid.isRows .boardTileInfo {
+	min-width: 0;
+	padding: 16px 20px;
+}
+
+#boardGrid.isRows .boardTileExcerpt {
+	-webkit-line-clamp: 3;
+}
+
+@media screen and (max-width: 535px) {
+	#boardGrid.isRows .boardTileThumb {
+		flex-basis: 120px;
+		width: 120px;
+		min-height: 100px;
+	}
+
+	#boardGrid.isRows .boardTileInfo {
+		padding: 10px 12px 12px;
+	}
+}
+
+/* --- Modal ------------------------------------------------------------ */
+
+.boardModal[hidden] {
+	display: none;
+	opacity: 0;
+}
+
+.boardModal {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 200ms ease, display 200ms allow-discrete;
+}
+
+@starting-style {
+	.boardModal:not([hidden]) {
+		opacity: 0;
+	}
+}
+
+.boardModalBackdrop {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(16, 16, 16, 0.9);
+}
+
+.boardModalContent {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	max-height: 90vh;
+	width: 100%;
+	background-color: #222;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	padding: 48px 24px 24px;
+	border-radius: 9px;
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.boardModal[hidden] .boardModalContent {
+	opacity: 0;
+	transform: scale(0.96);
+}
+
+@starting-style {
+	.boardModal:not([hidden]) .boardModalContent {
+		opacity: 0;
+		transform: scale(0.96);
+	}
+}
+
+/* Stays pinned to the top-right corner while the post scrolls underneath.
+   Sticky inside the scrolling card: the negative margins pull it up into the
+   card's top padding without pushing the content below it down. The dark
+   circle keeps it visible over photos. */
+.boardModalClose {
+	position: sticky;
+	top: -40px; /* sticky is measured from inside the card's 48px top padding: this lands it 8px from the top */
+	z-index: 5;
+	align-self: flex-end;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	margin: -40px -12px 0 0;
+	padding: 0;
+	background-color: rgba(16, 16, 16, 0.75);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 150ms ease;
+}
+
+/* Same clear.svg icon as the menu drawer and search clear buttons */
+.boardIconClose {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/clear.svg');
+	mask-image: url('../images/icons/clear.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	transition: background-color 150ms ease;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+	.boardModalClose:hover .boardIconClose {
+		background-color: #FF6262;
+	}
+
+	.boardNewPost:hover {
+		background: #F9F976;
+		color: #101010;
+	}
+}
+
+/* --- Post modal content ---------------------------------------------------
+   Top to bottom: cover photo · title · by · opening · media + captions ·
+   closing · details · footer (hype, comments, ⋮) · comments. */
+
+.boardModalHero[hidden],
+.boardModalActions > span:empty,
+.boardModalMore[hidden],
+.boardModalStatus[hidden],
+.boardModalShow[hidden],
+.boardModalCredit[hidden],
+.boardModalComments[hidden],
+.boardModalMoreMenu[hidden],
+.boardModalMoreItem[hidden],
+.boardModalNote[hidden] {
+	display: none;
+}
+
+.boardModalHero {
+	margin-bottom: 20px;
+}
+
+.boardModalHero img,
+.boardModalHero video,
+.boardModalFigure img,
+.boardModalFigure video {
+	width: 100%;
+	max-height: 70vh;
+	border-radius: 6px;
+	object-fit: contain;
+	background-color: #000;
+	display: block;
+}
+
+.boardModalHead h2 {
+	font-size: 32px;
+	line-height: 1.05;
+	margin: 0 40px 4px 0 !important; /* clear of the close button */
+	overflow-wrap: anywhere;
+}
+
+.boardModalHead {
+	margin-bottom: 20px;
+}
+
+/* "by username on Oct 14, 2026 at 8:30 PM" */
+.boardModalBy {
+	margin: 0;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	color: #ADADAD;
+}
+
+.boardModalCredit {
+	margin: 4px 0 0;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	color: #ADADAD;
+}
+
+.boardModalByName {
+	color: #62CBB8;
+	text-decoration: none;
+}
+
+.boardModalBy .icon.crwdMaxBadge {
+	width: 18px;
+	height: 18px;
+	margin-left: 4px;
+	vertical-align: -4px;
+}
+
+.boardModalBody {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.boardModalText p {
+	margin: 0 0 12px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #FFF;
+	white-space: pre-line; /* keep single line breaks people type */
+	overflow-wrap: anywhere;
+}
+
+.boardModalText p:last-child {
+	margin-bottom: 0;
+}
+
+.boardModalFigure {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+}
+
+.boardModalStreamCaption {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
+	color: #ADADAD;
+	margin: 0;
+	white-space: pre-line;
+}
+
+/* Show Details: tagged acts (+ genres), venue, show date */
+.boardModalShow {
+	margin: 24px 0 0;
+	padding-top: 20px;
+	border-top: 1px solid #333;
+}
+
+.boardModalShowTitle {
+	margin: 0 0 12px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #FFF;
+}
+
+.boardModalDetails {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 0;
+}
+
+.boardModalDetail {
+	display: grid;
+	grid-template-columns: 72px minmax(0, 1fr);
+	gap: 12px;
+	align-items: baseline;
+}
+
+.boardModalDetail dt {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #ADADAD;
+}
+
+.boardModalDetail dd {
+	margin: 0;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	color: #FFF;
+}
+
+.boardModalDetail dd a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.boardModalActs {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.boardModalAct {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px 10px;
+}
+
+.boardModalGenres {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.boardModalGenres .genre-chip {
+	display: inline-flex;
+	align-items: center;
+	font-family: 'Space Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 0.03em;
+	padding: 3px 10px;
+	border: 1px solid var(--genre-color, rgba(255,255,255,0.15));
+	border-radius: 20px;
+	color: var(--genre-color, #FFF);
+	background: transparent;
+	white-space: nowrap;
+}
+
+/* Shown in place of hype/comments while a post waits on review (only its author sees it) */
+.boardModalStatus {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	border: 1px solid currentColor;
+	border-radius: 20px;
+	color: #ADADAD;
+}
+
+.boardModalStatus.isRejected {
+	color: #FF6262;
+}
+
+/* Footer: hype + comments on the left, ⋮ on the right */
+.boardModalFooter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-top: 24px;
+	padding-top: 16px;
+	border-top: 1px solid #333;
+}
+
+.boardModalActions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/* The same hype + comment buttons under the title (the footer keeps its own) */
+.boardModalTopActions {
+	margin: -8px 0 20px; /* 12px under the byline, then the post */
+}
+
+.boardModalTopActions[hidden] {
+	display: none;
+}
+
+.crwdChipComment.isOpen {
+	color: #62CBB8;
+	border-color: #62CBB8;
+}
+
+.boardModalMore {
+	position: relative;
+}
+
+.boardModalMoreButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	background: none;
+	border: 1px solid transparent;
+	border-radius: 9px;
+	color: #FFF;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease;
+}
+
+.boardModalMoreButton .icon {
+	width: 24px;
+	height: 24px;
+}
+
+.boardModalMoreButton.open {
+	border-color: #F9F976;
+	color: #F9F976;
+}
+
+.boardModalMoreButton:focus-visible {
+	outline: 2px solid #F9F976;
+	outline-offset: 2px;
+}
+
+/* Same yellow panel as the header's account menu; opens upward from the footer */
+.boardModalMoreMenu {
+	position: absolute;
+	right: 0;
+	bottom: calc(100% + 8px);
+	z-index: 20;
+	width: 180px;
+	margin: 0;
+	padding: 8px;
+	list-style: none;
+	background: #F9F976;
+	border-radius: 9px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.boardModalMoreItem {
+	display: block;
+	width: 100%;
+	padding: 10px 12px;
+	background: none;
+	border: none;
+	border-radius: 6px;
+	color: #101010;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.boardModalMoreItem.isDanger {
+	color: #B42318;
+}
+
+.boardModalMoreItem:focus-visible {
+	outline: 2px solid #101010;
+	outline-offset: -2px;
+}
+
+/* "Link copied" bubble above the ⋮ button */
+.boardModalNote {
+	position: absolute;
+	right: 0;
+	bottom: calc(100% + 8px);
+	z-index: 21;
+	padding: 6px 10px;
+	background: #62CBB8;
+	border-radius: 6px;
+	color: #101010;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.boardModalComments {
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: 1px solid #333;
+	scroll-margin-top: 56px; /* the top comment button scrolls here: lands below the pinned ✕, so it can't cover the sort button */
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.boardModalByName:hover,
+	.boardModalDetail dd a:hover {
+		color: #62CBB8;
+		text-decoration: underline;
+	}
+
+	.boardModalMoreButton:hover {
+		border-color: #F9F976;
+	}
+
+	.boardModalMoreItem:hover {
+		background: #101010;
+		color: #F9F976;
+	}
+
+	.boardModalFigure:hover {
+		transform: none !important;
+	}
+}
+
+@media screen and (max-width: 932px) {
+	.boardNewPost {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 535px) {
+	.boardModalHead h2 {
+		font-size: 26px;
+	}
+
+	.boardModalDetail {
+		grid-template-columns: 1fr;
+		gap: 2px;
+	}
+}
+
+body.boardModalOpen {
+	overflow: hidden;
+}

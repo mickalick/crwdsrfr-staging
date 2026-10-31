@@ -1,0 +1,837 @@
+// acts.js
+// Data layer + grid/jump-nav/modal rendering for /acts/ — the acts directory page.
+//
+// Data sources:
+//   /data/acts.json   — object keyed by slug, each act:
+//     { name, aliases[], genres[], links[{label,value}], exclude ('yes'|'no') }
+//   /data/events.json — { venues: {id: venue}, events: [...] } (same shape events.js consumes)
+//   /data/genres.json — { [genre]: { label, color } } (same file events.js consumes, for
+//     genreLabel()/genreColor() parity with the calendar's chip colors)
+//   data/board-media.json — via window.BoardMedia (exposed by board.js, loaded before this
+//     file on this page). board.js no-ops its own grid/modal rendering when #boardGrid isn't
+//     present, so loading it here only exposes fetchBoardMedia/resolveVenueName/etc.
+//
+// Acts with exclude: "yes" are catch-all/generic entries (booking placeholders like
+// "Event" or "Comedy") and are never listed here.
+//
+// Matching acts to events/board media: neither events.json nor board-media.json carry an
+// actId — events only have free-text performers[].name / title, and board posts only have
+// a free-text title. So an act "matches" an event/post when the act's name or one of its
+// aliases appears as a whole word in that text (case-insensitive). Short names (<=3 chars)
+// are matched by exact equality only, not substring, to avoid noisy false positives.
+
+(function () {
+	const ACTS_URL = '/data/acts.json';
+	const EVENTS_URL = '/data/events.json';
+	const GENRES_URL = '/data/genres.json';
+
+	const JUMP_GROUPS = ['0-9', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')];
+
+	// Display label for a group — used by both the jump nav chip and its
+	// matching section heading so the two always stay in sync. The group
+	// key itself stays "0-9" everywhere else (anchors, actsByGroup, etc).
+	function groupLabel(group) {
+		return group === '0-9' ? '#' : group;
+	}
+	const MEDIA_COLLAPSED_LIMIT = 8; // 2 rows × 4 columns before "Show All"
+	const MAX_UPCOMING_EVENTS = 8;
+	const FILTER_STORAGE_KEY = 'crwdsrfr_acts_filters';
+
+	let genreMeta = {}; // populated from data/genres.json, same as events.js
+
+	// All non-excluded acts, keyed by slug, sorted — populated once by loadActs()
+	// and never mutated afterward. Filtering/search work off this master map;
+	// they only ever narrow which slugs get grouped/rendered, never the
+	// act objects themselves (so the modal always has the full act to show,
+	// even though its tile only renders when the act passes the current filter).
+	let allActsBySlug = {};
+	let allActSlugsSorted = [];
+
+	// Hype counts above zero, keyed by act slug — filled by loadActHypeCounts()
+	// once accounts are ready, and kept current when someone hypes in the modal.
+	let actHypeCounts = {};
+
+	let currentSearch = '';
+	const selectedGenres = new Set();
+	let onlyLocal = false;
+	let onlyUpcoming = false;
+	const expandedGroups = { genre: false };
+
+	// --- Filter persistence --------------------------------------------------
+	// Selected filters persist across visits; the search term itself does not
+	// — same split events.js/board.js use for their own filters vs. search.
+
+	function saveFiltersToStorage() {
+		try {
+			localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({ genres: [...selectedGenres], local: onlyLocal, upcoming: onlyUpcoming }));
+		} catch (e) {
+			// localStorage unavailable — filters simply won't persist this session
+		}
+	}
+
+	function loadFiltersFromStorage() {
+		try {
+			const raw = localStorage.getItem(FILTER_STORAGE_KEY);
+			if (!raw) return;
+			const parsed = JSON.parse(raw);
+			(parsed.genres || []).forEach(g => selectedGenres.add(g));
+			onlyLocal = Boolean(parsed.local);
+			onlyUpcoming = Boolean(parsed.upcoming);
+		} catch (e) {
+			// Corrupt or missing data — just start with no filters
+		}
+	}
+
+	function actMatchesGenreFilters(act) {
+		if (selectedGenres.size === 0) return true;
+		return (act.genres || []).some(g => selectedGenres.has(g));
+	}
+
+	function actMatchesLocalFilter(act) {
+		if (!onlyLocal) return true;
+		return String(act.local).toLowerCase() === 'yes';
+	}
+
+	// Reuses the same act<->event matching logic the modal uses for "Upcoming
+	// Shows", so a tile only passes this filter when the modal would actually
+	// show something under that section. Defined lower in the file, but that's
+	// fine — function declarations are hoisted, and this only ever runs after
+	// loadActs() has populated eventsData.
+	function actMatchesUpcomingFilter(act) {
+		if (!onlyUpcoming) return true;
+		return upcomingEventsForAct(act, eventsData).length > 0;
+	}
+
+	function actMatchesSearch(act, term) {
+		if (term === '') return true;
+		const needle = term.toLowerCase();
+		if (act.name.toLowerCase().includes(needle)) return true;
+		return (act.aliases || []).some(a => a.toLowerCase().includes(needle));
+	}
+
+	// --- Genre label/color (mirrors events.js exactly, for chip parity) -----
+
+	function titleCase(str) {
+		return str
+			.split('-')
+			.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+			.join(' ');
+	}
+
+	function genreLabel(genre) {
+		return genreMeta[genre]?.label || titleCase(genre);
+	}
+
+	function genreColor(genre) {
+		if (genreMeta[genre]?.color) return genreMeta[genre].color;
+
+		let hash = 0;
+		for (let i = 0; i < genre.length; i++) {
+			hash = (hash * 31 + genre.charCodeAt(i)) >>> 0;
+		}
+		const hue = hash % 360;
+		return `hsl(${hue}, 65%, 60%)`;
+	}
+
+	function genreChipsHtml(genres) {
+		if (!genres || genres.length === 0) return '';
+		return genres.map(g => `
+			<span class="genre-chip" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</span>
+		`).join('');
+	}
+
+	// --- Sorting / grouping --------------------------------------------------
+
+	function sortableName(name) {
+		return String(name || '').replace(/^the\s+/i, '');
+	}
+
+	// Strips diacritics so "Gemütlichkeit" / "Bräts" bucket under G / B rather
+	// than falling through to the 0-9 catch-all.
+	function stripDiacritics(str) {
+		return String(str || '').normalize('NFD').replace(/[̀-ͯ]/g, '');
+	}
+
+	function jumpGroupFor(name) {
+		const first = stripDiacritics(sortableName(name)).trim().charAt(0).toUpperCase();
+		return /^[A-Z]$/.test(first) ? first : '0-9';
+	}
+
+	// --- Act <-> event / board-media matching --------------------------------
+
+	function normalize(str) {
+		return String(str || '').trim().toLowerCase();
+	}
+
+	function escapeRegex(str) {
+		return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+
+	function actNeedles(act) {
+		return [act.name, ...(act.aliases || [])]
+			.map(normalize)
+			.filter(Boolean);
+	}
+
+	function textMatchesNeedle(text, needle) {
+		if (!text) return false;
+		const normalizedText = normalize(text);
+		if (needle.length <= 3) return normalizedText === needle;
+		return new RegExp(`\\b${escapeRegex(needle)}\\b`, 'i').test(text);
+	}
+
+	function actMatchesEvent(needles, event) {
+		const performerNames = (event.performers || []).map(p => normalize(p.name));
+		return needles.some(needle => {
+			if (performerNames.includes(needle)) return true;
+			return textMatchesNeedle(event.title, needle);
+		});
+	}
+
+	// A "unit" here is one of window.BoardMedia.mediaUnitsForItem()'s
+	// per-shot entries — its own caption when it has one, else the parent
+	// post's title (see board.js for the fallback logic). Matching against
+	// units instead of whole posts means an act named only in one shot's
+	// caption within a larger gallery/report (e.g. an opening act mentioned
+	// in a single block of a headliner's recap) still surfaces here, even
+	// though the post's own title never names that act.
+	function actMatchesMediaUnit(needles, unit) {
+		return needles.some(needle => textMatchesNeedle(unit.matchText, needle));
+	}
+
+	function toLocalDateStr(date) {
+		const y = date.getFullYear();
+		const m = String(date.getMonth() + 1).padStart(2, '0');
+		const d = String(date.getDate()).padStart(2, '0');
+		return `${y}-${m}-${d}`;
+	}
+
+	function formatTime(t) {
+		if (!t) return null;
+		const [h, m] = t.split(':').map(Number);
+		const period = h >= 12 ? 'PM' : 'AM';
+		const hour = h % 12 || 12;
+		return `${hour}:${String(m).padStart(2, '0')} ${period}`;
+	}
+
+	function formatEventDate(dateStr) {
+		const [y, m, d] = dateStr.split('-').map(Number);
+		return new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+	}
+
+	function upcomingEventsForAct(act, eventsData) {
+		if (!eventsData) return [];
+		const needles = actNeedles(act);
+		const todayStr = toLocalDateStr(new Date());
+
+		return eventsData.events
+			.filter(e => e.date >= todayStr && actMatchesEvent(needles, e))
+			.sort((a, b) => (a.date + (a.time || '')).localeCompare(b.date + (b.time || '')))
+			.slice(0, MAX_UPCOMING_EVENTS);
+	}
+
+	async function mediaPreviewForAct(act, slug) {
+		if (!window.BoardMedia) return [];
+		try {
+			const items = await window.BoardMedia.fetchBoardMedia();
+			const needles = actNeedles(act);
+			// Flatten every post into its individual photos/videos first, then
+			// match each one on its own — this is what lets an opener named
+			// only in one caption of a larger gallery surface here.
+			// A captioned shot matches when its caption names the act; an
+			// uncaptioned one when its post is tagged with the act, or titled after it.
+			const units = items.flatMap(item => window.BoardMedia.mediaUnitsForItem(item));
+			return units.filter(unit => unit.caption
+				? actMatchesMediaUnit(needles, unit)
+				: (unit.actIds || []).includes(slug) || actMatchesMediaUnit(needles, unit))
+				.filter(unit => unit.thumbnail); // videos without a preview image are skipped
+		} catch (e) {
+			console.warn('acts.js: could not load board media', e);
+			return [];
+		}
+	}
+
+	// --- Rendering: jump nav --------------------------------------------------
+
+	function renderJumpNav(actsByGroup) {
+		const nav = document.getElementById('actsJumpNav');
+		nav.innerHTML = JUMP_GROUPS.map(group => {
+			const label = groupLabel(group);
+			const hasActs = (actsByGroup[group] || []).length > 0;
+			return hasActs
+				? `<a class="jumpChip" href="#actsGroup-${encodeURIComponent(group)}">${label}</a>`
+				: `<span class="jumpChip jumpChip-disabled" aria-disabled="true">${label}</span>`;
+		}).join('');
+	}
+
+	// --- Rendering: act list ---------------------------------------------------
+
+	function actTileHtml(slug, act) {
+		return `
+			<button type="button" class="actTile" data-slug="${slug}">
+				<span class="actTileName">${act.name}</span>
+				<span class="actGenres">${genreChipsHtml(act.genres)}</span>
+				${tileHypesHtml(slug)}
+			</button>`;
+	}
+
+	// Display-only hype count at the bottom of a tile; nothing at all at zero
+	function tileHypesHtml(slug) {
+		const n = actHypeCounts[slug] || 0;
+		if (n === 0) return '';
+		return `<span class="actTileHypes" aria-label="${n} hype${n === 1 ? '' : 's'}"><span class="icon iconHype" aria-hidden="true"></span>${n.toLocaleString()}</span>`;
+	}
+
+	// Updates the counts on tiles already on the page (all of them, or one act's)
+	function refreshTileHypes(onlySlug) {
+		const selector = onlySlug ? `.actTile[data-slug="${CSS.escape(onlySlug)}"]` : '.actTile';
+		document.querySelectorAll(selector).forEach(tile => {
+			tile.querySelector('.actTileHypes')?.remove();
+			const html = tileHypesHtml(tile.dataset.slug);
+			if (html) tile.insertAdjacentHTML('beforeend', html);
+		});
+	}
+
+	function socialReady() {
+		return !!(window.CrwdSocial && window.CrwdCore && CrwdCore.enabled);
+	}
+
+	async function loadActHypeCounts() {
+		if (!socialReady()) return;
+		actHypeCounts = await CrwdSocial.loadAllHypeCounts('act');
+		refreshTileHypes();
+	}
+
+	// actsByGroup holds only the slugs currently passing search/filter; the
+	// act objects themselves always come from the master allActsBySlug map.
+	function renderActsList(actsByGroup) {
+		const container = document.getElementById('actsList');
+		container.innerHTML = '';
+
+		JUMP_GROUPS.forEach(group => {
+			const groupActs = actsByGroup[group];
+			if (!groupActs || groupActs.length === 0) return;
+
+			const section = document.createElement('div');
+			section.className = 'actsGroup';
+			section.innerHTML = `
+				<div class="actsAnchor" id="actsGroup-${encodeURIComponent(group)}"></div>
+				<h2 class="dateSeparator">${groupLabel(group)}</h2>
+				<div class="actsGrid">
+					${groupActs.map(slug => actTileHtml(slug, allActsBySlug[slug])).join('')}
+				</div>
+				<p class="actsBackToTop"><a aria-label="Back to top of page" href="#top"><small>Back to Top</small></a></p>`;
+			container.appendChild(section);
+		});
+
+		container.querySelectorAll('.actTile').forEach(tile => {
+			tile.addEventListener('click', () => openActModal(allActsBySlug[tile.dataset.slug], tile.dataset.slug));
+		});
+	}
+
+	// --- Search + filter application ------------------------------------------
+
+	function updateSubHead() {
+		const subHeadEl = document.getElementById('actsSubHead');
+		const term = currentSearch.trim();
+		subHeadEl.textContent = term === ''
+			? 'All Acts:'
+			: `All Acts including "${term}":`;
+	}
+
+	function groupFilteredActs() {
+		const term = currentSearch.trim();
+		const actsByGroup = {};
+		JUMP_GROUPS.forEach(g => (actsByGroup[g] = []));
+
+		allActSlugsSorted.forEach(slug => {
+			const act = allActsBySlug[slug];
+			if (!actMatchesSearch(act, term)) return;
+			if (!actMatchesGenreFilters(act)) return;
+			if (!actMatchesLocalFilter(act)) return;
+			if (!actMatchesUpcomingFilter(act)) return;
+			actsByGroup[jumpGroupFor(act.name)].push(slug);
+		});
+
+		return actsByGroup;
+	}
+
+	function applyFilters() {
+		updateSubHead();
+
+		const container = document.getElementById('actsList');
+		const emptyMsg = document.getElementById('actsEmpty');
+		const loadingMsg = document.getElementById('actsLoading');
+
+		// Swap the results out for the "Tuning up..." message right away —
+		// synchronous with whatever triggered this (a checkbox's checked
+		// state, a chip's active class, etc.) — so it's what's visible while
+		// the filtering pass runs, not a frozen list.
+		$(container).hide();
+		emptyMsg.hidden = true;
+		loadingMsg.hidden = false;
+
+		// groupFilteredActs() (and especially actMatchesUpcomingFilter within
+		// it) is real synchronous work now — filtering/sorting the events list
+		// per act. A single requestAnimationFrame still runs *before* the
+		// browser paints, so the loading message above and this work would
+		// still land in the same frame. Nesting two rAF calls waits for an
+		// actual paint to happen first, then runs the filtering pass — so the
+		// checkbox and loading message are visible immediately, before
+		// results load.
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				const actsByGroup = groupFilteredActs();
+				const totalMatches = Object.values(actsByGroup).reduce((n, list) => n + list.length, 0);
+
+				renderJumpNav(actsByGroup);
+				renderActsList(actsByGroup);
+
+				loadingMsg.hidden = true;
+				emptyMsg.hidden = totalMatches > 0;
+				$(container).fadeIn(150);
+			});
+		});
+	}
+
+	function resetSearch() {
+		const input = document.getElementById('actsSearch');
+		input.value = '';
+		currentSearch = '';
+		document.getElementById('actsSearchWrapper').classList.remove('hasValue');
+		applyFilters();
+		input.focus();
+	}
+
+	function refreshFilterUI() {
+		saveFiltersToStorage();
+		buildActsFilterChips();
+		renderActiveFilters();
+		applyFilters();
+	}
+
+	// --- Filter chips -----------------------------------------------------
+
+	// Only offers chips for genres actually used by at least one (non-excluded)
+	// act — same reasoning board.js uses for its own venue filter options.
+	function buildActsFilterChips() {
+		const genreWrap = document.getElementById('actsGenreFilters');
+		const genres = [...new Set(Object.values(allActsBySlug).flatMap(a => a.genres || []))].sort();
+
+		genreWrap.innerHTML = genres.map(g => `
+			<button type="button" class="chip ${selectedGenres.has(g) ? 'active' : ''}" data-filter="genre" data-value="${g}" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</button>
+		`).join('');
+
+		genreWrap.querySelectorAll('.chip').forEach(chip => {
+			chip.addEventListener('click', () => {
+				const value = chip.dataset.value;
+				if (selectedGenres.has(value)) selectedGenres.delete(value); else selectedGenres.add(value);
+				refreshFilterUI();
+			});
+		});
+
+		collapseChipRow(genreWrap, 'genre');
+	}
+
+	// Mirrors board.js's collapseChipRow exactly: collapses a chip row down to
+	// two lines with a "Show All" toggle once it would otherwise wrap further,
+	// re-measuring only once the panel has real layout (called after it's shown).
+	function collapseChipRow(wrap, groupKey) {
+		wrap.querySelectorAll('.chip-show-all').forEach(el => el.remove());
+		const chips = [...wrap.querySelectorAll('.chip')];
+		chips.forEach(c => (c.style.display = ''));
+
+		if (chips.length === 0) return;
+
+		const lineOneTop = chips[0].offsetTop;
+		const lineTwoStart = chips.findIndex(c => c.offsetTop !== lineOneTop);
+		if (lineTwoStart === -1) return; // everything fits on line 1
+
+		const lineTwoTop = chips[lineTwoStart].offsetTop;
+		const lineThreeStart = chips.findIndex((c, i) => i >= lineTwoStart && c.offsetTop !== lineTwoTop);
+		if (lineThreeStart === -1) return; // everything fits within 2 lines
+
+		const toggleBtn = document.createElement('button');
+		toggleBtn.type = 'button';
+		toggleBtn.className = 'chip chip-show-all';
+
+		if (expandedGroups[groupKey]) {
+			toggleBtn.textContent = 'Show Less';
+			toggleBtn.addEventListener('click', () => {
+				expandedGroups[groupKey] = false;
+				collapseChipRow(wrap, groupKey);
+			});
+		} else {
+			chips.slice(lineThreeStart).forEach(c => (c.style.display = 'none'));
+			toggleBtn.textContent = 'Show All';
+			toggleBtn.addEventListener('click', () => {
+				expandedGroups[groupKey] = true;
+				collapseChipRow(wrap, groupKey);
+			});
+		}
+
+		wrap.appendChild(toggleBtn);
+	}
+
+	function renderActiveFilters() {
+		const wrapper = document.getElementById('actsActiveFiltersWrapper');
+		const chipsWrap = document.getElementById('actsActiveFilters');
+
+		if (selectedGenres.size === 0 && !onlyLocal && !onlyUpcoming) {
+			wrapper.style.display = 'none';
+			chipsWrap.innerHTML = '';
+			return;
+		}
+
+		const genreChips = [...selectedGenres].map(g => `
+			<button type="button" class="chip active-chip" data-value="${g}">${genreLabel(g)} <span class="chip-remove">&times;</span></button>
+		`).join('');
+
+		const localChip = onlyLocal
+			? `<button type="button" class="chip active-chip" data-local="true">Local Only <span class="chip-remove">&times;</span></button>`
+			: '';
+
+		const upcomingChip = onlyUpcoming
+			? `<button type="button" class="chip active-chip" data-upcoming="true">Upcoming Shows Only <span class="chip-remove">&times;</span></button>`
+			: '';
+
+		wrapper.style.display = 'flex';
+		chipsWrap.innerHTML = genreChips + localChip + upcomingChip + `<button type="button" class="chip chip-reset" id="actsResetAllFilters">Reset</button>`;
+
+		chipsWrap.querySelectorAll('.active-chip').forEach(chip => {
+			chip.addEventListener('click', () => {
+				if (chip.dataset.local) {
+					onlyLocal = false;
+					document.getElementById('actsLocalFilter').checked = false;
+				} else if (chip.dataset.upcoming) {
+					onlyUpcoming = false;
+					document.getElementById('actsUpcomingFilter').checked = false;
+				} else {
+					selectedGenres.delete(chip.dataset.value);
+				}
+				refreshFilterUI();
+			});
+		});
+
+		document.getElementById('actsResetAllFilters').addEventListener('click', () => {
+			selectedGenres.clear();
+			onlyLocal = false;
+			onlyUpcoming = false;
+			document.getElementById('actsLocalFilter').checked = false;
+			document.getElementById('actsUpcomingFilter').checked = false;
+			refreshFilterUI();
+		});
+	}
+
+	// --- Modal -----------------------------------------------------------------
+
+	const modal = document.getElementById('actModal');
+	const modalTitle = document.getElementById('actModalTitle');
+	const modalGenres = document.getElementById('actModalGenres');
+	const modalLinks = document.getElementById('actModalLinks');
+	const modalHype = document.getElementById('actModalHype');
+	const modalEventsSection = document.getElementById('actModalEventsSection');
+	const modalEventsList = document.getElementById('actModalEvents');
+	const modalMediaSection = document.getElementById('actModalMediaSection');
+	const modalMediaGrid = document.getElementById('actModalMedia');
+	const modalMediaToggle = document.getElementById('actModalMediaToggle');
+	let activeModalAct = null;
+	let activeModalSlug = null;
+
+	function setMediaExpanded(expanded) {
+		modalMediaGrid.classList.toggle('expanded', expanded);
+		modalMediaToggle.textContent = expanded ? 'Show Less' : 'Show All';
+		modalMediaToggle.setAttribute('aria-expanded', String(expanded));
+	}
+
+	modalMediaToggle.addEventListener('click', () => {
+		const expanding = !modalMediaGrid.classList.contains('expanded');
+		setMediaExpanded(expanding);
+		// On collapse, keep the toggle in view so the modal doesn't leave you scrolled into empty space
+		if (!expanding) modalMediaToggle.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+	});
+
+	let eventsData = null;
+	let venueLookup = {};
+
+	function linksHtml(links) {
+		if (!links || links.length === 0) return '';
+		return links.map(link => `
+			<a class="actLink" href="${link.value}" target="_blank" rel="noopener">${link.label}</a>
+		`).join('<span class="actLinkSep"> · </span>');
+	}
+
+	function eventItemHtml(event) {
+		const venue = eventsData?.venues?.[event.venueId];
+		const venueName = venue?.name || '';
+		const venueHtml = venueName
+			? `<a href="/venues/${event.venueId}/" target="_blank" rel="noopener">${venueName}</a>`
+			: '';
+		const timeDisplay = formatTime(event.time);
+		const titleLink = event.eventUrl || venue?.eventsUrl || null;
+		const titleHtml = titleLink
+			? `<a href="${titleLink}" target="_blank" rel="noopener">${event.title}</a>`
+			: event.title;
+
+		// Details on the left; the show's hype button goes on the right (mountEventHypes)
+		return `
+			<li class="actModalEvent" data-event-id="${escapeHtml(event.id)}">
+				<div class="actModalEventInfo">
+					<span class="actModalEventTitle">${titleHtml} :</span>
+					<span class="actModalEventDate">${formatEventDate(event.date)}${timeDisplay ? ' · ' + timeDisplay : ''}</span>
+					<span class="actModalEventVenue">at ${venueHtml}</span>
+				</div>
+			</li>`;
+	}
+
+	// Board titles and captions are written by members now, so they're escaped
+	// before going into the HTML below
+	function escapeHtml(str) {
+		return String(str ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+	}
+
+	// `unit` is one of window.BoardMedia.mediaUnitsForItem()'s per-shot
+	// entries — its thumbnail/caption are the specific shot's own, even when
+	// that shot is one of several in a gallery.
+	function mediaThumbHtml(unit, isOverflow) {
+		const venueName = escapeHtml(window.BoardMedia?.resolveVenueName(unit.venueId, venueLookup) || '');
+		const label = escapeHtml(unit.caption || unit.postTitle);
+		// Deep-links straight to the parent post's modal on /board/ via its
+		// stable id (board.js reads a bare #<id> on load — no "item-" prefix).
+		// Falls back to the generic #top if a unit is somehow missing a postId.
+		const boardHref = unit.postId ? `/board/#${encodeURIComponent(unit.postId)}` : '/board/#top';
+		return `
+			<a class="actModalMediaThumb${isOverflow ? ' isOverflow' : ''}" href="${boardHref}" target="_blank" rel="noopener" title="${label}${venueName ? ' — ' + venueName : ''}">
+				<img src="${escapeHtml(unit.thumbnail)}" alt="${label}" loading="lazy">
+				${unit.type === 'video' ? '<span class="actModalMediaPlay"></span>' : ''}
+			</a>`;
+	}
+
+	// Hype button, top right of the modal. Loads this act's count and whether
+	// you've hyped it, then keeps the tile's count in step with clicks.
+	async function mountModalHype(act, slug) {
+		modalHype.replaceChildren();
+		if (!socialReady() || !slug) return;
+		await CrwdCore.ready;
+		const stats = (await CrwdSocial.loadStats('act', [slug]))[slug];
+		if (activeModalAct !== act) return; // another act was opened meanwhile
+		modalHype.replaceChildren(CrwdSocial.hypeButton({
+			type: 'act',
+			id: slug,
+			hypes: stats.hypes,
+			hyped: stats.hyped,
+			large: true,
+			onChange: state => {
+				if (state.hypes > 0) actHypeCounts[slug] = state.hypes; else delete actHypeCounts[slug];
+				refreshTileHypes(slug);
+			}
+		}));
+	}
+
+	// A hype button on each upcoming show, same as the calendar's (hype it without leaving the modal)
+	async function mountEventHypes(act, events) {
+		if (!socialReady() || !events.length) return;
+		await CrwdCore.ready;
+		const stats = await CrwdSocial.loadStats('event', events.map(e => e.id));
+		if (activeModalAct !== act) return; // another act was opened meanwhile
+		modalEventsList.querySelectorAll('.actModalEvent[data-event-id]').forEach(li => {
+			const event = events.find(e => e.id === li.dataset.eventId);
+			if (!event) return;
+			const s = stats[event.id] || {};
+			const wrap = document.createElement('div');
+			wrap.className = 'actModalEventHype';
+			wrap.appendChild(CrwdSocial.hypeButton({ type: 'event', id: event.id, hypes: s.hypes || 0, hyped: !!s.hyped }));
+			li.appendChild(wrap);
+		});
+	}
+
+	async function openActModal(act, slug) {
+		if (!act) return;
+		activeModalAct = act;
+		activeModalSlug = slug;
+
+		modalTitle.textContent = act.name;
+		modalGenres.innerHTML = genreChipsHtml(act.genres);
+		modalLinks.innerHTML = linksHtml(act.links);
+		mountModalHype(act, slug);
+
+		// Both modal sections are always shown now (not just when they have
+		// content) — an empty-state message fills in instead of hiding the
+		// section, so the modal's shape stays consistent act to act.
+		const upcoming = upcomingEventsForAct(act, eventsData);
+		modalEventsList.innerHTML = upcoming.length > 0
+			? upcoming.map(eventItemHtml).join('')
+			: '<li class="actModalEmptyMsg">No upcoming shows.</li>';
+		modalEventsSection.hidden = false;
+		mountEventHypes(act, upcoming);
+
+		// Media loads async — show the section with a loading message first,
+		// then fill it in once it resolves rather than delaying the whole
+		// modal on it.
+		modalMediaSection.hidden = false;
+		modalMediaGrid.innerHTML = '<p class="actModalEmptyMsg">Loading media…</p>';
+		modalMediaToggle.hidden = true;
+		setMediaExpanded(false);
+
+		modal.hidden = false;
+		document.body.classList.add('boardModalOpen');
+
+		const mediaItems = await mediaPreviewForAct(act, slug);
+		// Guard: if a different act's modal was opened while this one was loading, don't overwrite it
+		if (activeModalAct !== act) return;
+
+		modalMediaGrid.innerHTML = mediaItems.length > 0
+			? mediaItems.map((unit, i) => mediaThumbHtml(unit, i >= MEDIA_COLLAPSED_LIMIT)).join('')
+			: '<p class="actModalEmptyMsg">No media yet.</p>';
+		modalMediaToggle.hidden = mediaItems.length <= MEDIA_COLLAPSED_LIMIT;
+	}
+
+	function closeActModal() {
+		modal.hidden = true;
+		document.body.classList.remove('boardModalOpen');
+		// Drop a /acts/#slug link's hash so a refresh doesn't reopen it
+		if (activeModalSlug && decodeURIComponent(window.location.hash.slice(1)) === activeModalSlug) {
+			history.replaceState(null, '', window.location.pathname + window.location.search);
+		}
+	}
+
+	// /acts/#<slug> (e.g. from a profile's Hyped list) opens that act's modal
+	function openActFromHash() {
+		let slug = '';
+		try { slug = decodeURIComponent(window.location.hash.slice(1)); } catch (e) { return; }
+		if (slug && allActsBySlug[slug]) openActModal(allActsBySlug[slug], slug);
+	}
+
+	modal.addEventListener('click', (e) => {
+		if (e.target.closest('[data-actclose]')) closeActModal();
+	});
+
+	document.addEventListener('keydown', (e) => {
+		// Leave the act modal open when Escape is closing the sign-in modal on top of it
+		if (document.documentElement.classList.contains('crwdModalOpen')) return;
+		if (!modal.hidden && e.key === 'Escape') closeActModal();
+	});
+
+	// --- Init --------------------------------------------------------------
+
+	async function loadActs() {
+		const loadingMsg = document.getElementById('actsLoading');
+		const emptyMsg = document.getElementById('actsEmpty');
+
+		try {
+			const [actsRes, eventsRes, genresRes] = await Promise.all([
+				fetch(ACTS_URL, { cache: 'no-store' }),
+				fetch(EVENTS_URL, { cache: 'no-store' }),
+				fetch(GENRES_URL, { cache: 'no-store' }),
+			]);
+
+			const actsData = await actsRes.json();
+			eventsData = await eventsRes.json();
+			try {
+				genreMeta = await genresRes.json();
+			} catch (e) {
+				genreMeta = {};
+			}
+
+			if (window.BoardMedia) {
+				venueLookup = await window.BoardMedia.fetchVenueLookup();
+			}
+
+			allActsBySlug = {};
+			allActSlugsSorted = Object.entries(actsData)
+				.filter(([, act]) => String(act.exclude).toLowerCase() !== 'yes')
+				.sort(([, a], [, b]) => sortableName(a.name).localeCompare(sortableName(b.name)))
+				.map(([slug, act]) => {
+					allActsBySlug[slug] = act;
+					return slug;
+				});
+
+			loadingMsg.hidden = true;
+
+			if (allActSlugsSorted.length === 0) {
+				emptyMsg.hidden = false;
+				return;
+			}
+
+			loadFiltersFromStorage();
+			document.getElementById('actsLocalFilter').checked = onlyLocal;
+			document.getElementById('actsUpcomingFilter').checked = onlyUpcoming;
+			buildActsFilterChips();
+			renderActiveFilters();
+			applyFilters();
+			openActFromHash();
+			loadActHypeCounts();
+
+			// Signing in or out changes whether you've hyped the open act
+			if (socialReady()) {
+				CrwdCore.onChange(() => {
+					if (!modal.hidden && activeModalAct) mountModalHype(activeModalAct, activeModalSlug);
+				});
+			}
+		} catch (err) {
+			console.error('acts.js: failed to load acts', err);
+			loadingMsg.textContent = "Couldn't load the acts list — try refreshing.";
+		}
+	}
+
+	// --- Search + filter toggle wiring --------------------------------------
+
+	document.addEventListener('DOMContentLoaded', function () {
+		const searchInput = document.getElementById('actsSearch');
+		const searchWrapper = document.getElementById('actsSearchWrapper');
+
+		searchInput.addEventListener('input', function () {
+			currentSearch = this.value;
+			searchWrapper.classList.toggle('hasValue', currentSearch.trim() !== '');
+			applyFilters();
+		});
+
+		searchInput.addEventListener('keydown', function (e) {
+			if (e.key === 'Enter') {
+				e.preventDefault();
+				this.blur(); // dismisses the mobile keyboard
+			}
+		});
+
+		document.getElementById('actsSearchGo').addEventListener('click', () => applyFilters());
+		document.getElementById('actsSearchReset').addEventListener('click', resetSearch);
+
+		document.getElementById('actsFilterToggle').addEventListener('click', function () {
+			const panel = document.getElementById('actsFilters');
+			const isOpen = panel.style.display !== 'none';
+			panel.style.display = isOpen ? 'none' : 'flex';
+			this.classList.toggle('active', !isOpen);
+			if (!isOpen) buildActsFilterChips(); // re-measure now that the panel has real layout
+		});
+
+		document.getElementById('actsLocalFilter').addEventListener('change', function () {
+			onlyLocal = this.checked;
+			refreshFilterUI();
+		});
+
+		document.getElementById('actsUpcomingFilter').addEventListener('change', function () {
+			onlyUpcoming = this.checked;
+			refreshFilterUI();
+		});
+
+		// The site-wide smooth-scroll handler in <head> binds directly to
+		// `$("a")` at DOMContentLoaded — it only catches links that already
+		// exist in the DOM at that moment. The jump nav chips and each
+		// group's "Back to Top" link are injected later by applyFilters(),
+		// so they'd otherwise fall back to an instant native anchor jump.
+		// This delegates the exact same animation from a static ancestor
+		// (#actsContent/#actsSpace, both present at load time) so it still
+		// catches those links no matter when they're added or re-rendered.
+		$('#actsContent, #actsSpace').on('click', '#actsJumpNav a, .actsBackToTop a', function (event) {
+			event.preventDefault();
+			const hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 650, function () {
+				window.location.hash = hash;
+			});
+		});
+
+		loadActs();
+	});
+})();

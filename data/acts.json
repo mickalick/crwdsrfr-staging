@@ -1,0 +1,8499 @@
+{
+  "austin-walkin-cane": {
+    "name": "Austin Walkin' Cane",
+    "aliases": [
+      "Austin Walkin' Cane",
+      "Austin Walkin Cane"
+    ],
+    "genres": [
+      "blues",
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://walkincane.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/austinwalkincane"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/4r07d1Of3c8YEDQmCM4sba?si=S0WTE6P7TzebIjr-owBFGQ"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "adult-human-chicken": {
+    "name": "Adult Human Chicken",
+    "aliases": [
+      "Adult Human Chicken"
+    ],
+    "genres": [
+      "pop",
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/adulthumanchickenband/"
+      },
+      {
+        "label": "Bandcamp",
+        "value": "https://adulthumanchicken.bandcamp.com/album/adult-human-chicken"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/4OtBOSwqM08VUE2kISH7Vq"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "opus-216": {
+    "name": "Opus 216",
+    "aliases": [
+      "Opus 216",
+      "Opus216"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.opus216.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/opus216/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/OPUS216/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hello-3d": {
+    "name": "Hello!3D",
+    "aliases": [
+      "Hello! 3D",
+      "Hello!3D",
+      "Hello 3D",
+      "Hello 3D Band"
+    ],
+    "genres": [
+      "latin",
+      "psych"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/hello3dband/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/Hello3Dband/"
+      },
+      {
+        "label": "Bandcamp",
+        "value": "https://hello3d.bandcamp.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "stamper-starr": {
+    "name": "Stamper Starr",
+    "aliases": [
+      "Stamper Starr"
+    ],
+    "genres": [
+      "blues",
+      "classic",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.stamperstarr.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/stamperstarrmusic/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/stamperstarrmusic/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "old-skool": {
+    "name": "Old Skool",
+    "aliases": [
+      "Old Skool"
+    ],
+    "genres": [
+      "covers",
+      "dance-disco",
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.oldskoolcle.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "disco-inferno": {
+    "name": "Disco Inferno",
+    "aliases": [
+      "Disco Inferno"
+    ],
+    "genres": [
+      "dance-disco",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://discoinfernoband.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "that-80s-band": {
+    "name": "That 80's Band",
+    "aliases": [
+      "That 80's Band",
+      "That 80s Band"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "spazmatics": {
+    "name": "Spazmatics",
+    "aliases": [
+      "Spazmatics",
+      "The Spazmatics"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://thespazmatics.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "country-redford": {
+    "name": "Country Redford",
+    "aliases": [
+      "Country Redford"
+    ],
+    "genres": [
+      "country",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://countryredford.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "post-road": {
+    "name": "Post Road",
+    "aliases": [
+      "Post Road"
+    ],
+    "genres": [
+      "country",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://postroadcountry.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sully-solo": {
+    "name": "Sully Solo",
+    "aliases": [
+      "Sully Solo"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-ladies-night": {
+    "name": "The Ladies Night",
+    "aliases": [
+      "The Ladies Night",
+      "Ladies Night Band"
+    ],
+    "genres": [
+      "pop",
+      "covers",
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.theladiesnightband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/ladies_night_band/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/TheLadiesNightBand/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "faction": {
+    "name": "Faction",
+    "aliases": [
+      "Faction"
+    ],
+    "genres": [
+      "pop",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.factioncleveland.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "custard-pie": {
+    "name": "Custard Pie",
+    "aliases": [
+      "Custard Pie"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "clayton-brothers": {
+    "name": "Clayton Brothers",
+    "aliases": [
+      "Clayton Brothers"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "factual-brains": {
+    "name": "Factual Brains",
+    "aliases": [
+      "Factual Brains"
+    ],
+    "genres": [
+      "indie",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bad-juju": {
+    "name": "Bad Juju",
+    "aliases": [
+      "Bad Juju"
+    ],
+    "genres": [
+      "rock",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://badjujucleveland.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "follow-the-sun": {
+    "name": "Follow The Sun",
+    "aliases": [
+      "Follow The Sun"
+    ],
+    "genres": [
+      "covers",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.followthesunband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/followthesun216/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/FollowtheSun216/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "trailer-park-ninjas": {
+    "name": "Trailer Park Ninjas",
+    "aliases": [
+      "Trailer Park Ninjas"
+    ],
+    "genres": [
+      "covers",
+      "pop",
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://trailerparkninjas.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "blue-lunch": {
+    "name": "Blue Lunch",
+    "aliases": [
+      "Blue Lunch"
+    ],
+    "genres": [
+      "blues",
+      "rnb-soul",
+      "jazz"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "http://www.bluelunch.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dogwater": {
+    "name": "Dogwater",
+    "aliases": [
+      "Dogwater",
+      "Dog Water",
+      "Dogwater Band",
+      "Dog Water Band"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "7 summers": {
+    "name": "7 Summers",
+    "aliases": [
+      "7 Summers"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://7summersband.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "cocktail-johnny": {
+    "name": "Cocktail Johnny",
+    "aliases": [
+      "Cocktail Johnny"
+    ],
+    "genres": [
+      "covers",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://cocktailjohnny.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "rachel-brown-and-the-beatnik-playboys": {
+    "name": "Rachel Brown & the Beatnik Playboys",
+    "aliases": [
+      "Rachel Brown & the Beatnik Playboys",
+      "Rachel Brown and the Beatnik Playboys",
+      "Rachel and the Beatnik Playboys"
+    ],
+    "genres": [
+      "country",
+      "folk-roots",
+      "blues"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.rachelbps.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hair-nation": {
+    "name": "Hair Nation",
+    "aliases": [
+      "Hair Nation"
+    ],
+    "genres": [
+      "metal",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://clehairnation.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "four-horsemen": {
+    "name": "Four Horsemen",
+    "aliases": [
+      "Four Horsemen",
+      "The Four Horsemen"
+    ],
+    "genres": [
+      "metal",
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.fourhorses.me/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/thefourhorsemenofficial/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/fourhorsemenmetallica/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-magicians-table": {
+    "name": "The Magicians Table",
+    "aliases": [
+      "The Magicians Table"
+    ],
+    "genres": [
+      "magic"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "death-becomes-her": {
+    "name": "Death Becomes Her",
+    "aliases": [
+      "Death Becomes Her"
+    ],
+    "genres": [
+      "theater"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "beetlejuice": {
+    "name": "Beetlejuice",
+    "aliases": [
+      "Beetlejuice"
+    ],
+    "genres": [
+      "theater"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-winter-s-tale": {
+    "name": "The Winter's Tale",
+    "aliases": [
+      "The Winter's Tale"
+    ],
+    "genres": [
+      "theater"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "cesear-s-forum-presents-conversations-after-a-burial": {
+    "name": "Cesear's Forum Presents: Conversations After A Burial",
+    "aliases": [
+      "Cesear's Forum Presents: Conversations After A Burial"
+    ],
+    "genres": [
+      "theater"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "leanne-morgan": {
+    "name": "Leanne Morgan",
+    "aliases": [
+      "Leanne Morgan"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.leannemorgan.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "alex-meixner": {
+    "name": "Alex Meixner",
+    "aliases": [
+      "Alex Meixner"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://alexmeixner.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "dorfrocker": {
+    "name": "Dorfrocker",
+    "aliases": [
+      "Dorfrocker"
+    ],
+    "genres": [
+      "polka",
+      "german"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.dorfrocker.de/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-klaberheads": {
+    "name": "The Klaberheads",
+    "aliases": [
+      "The Klaberheads"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.klaberheads.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "chardon-polka-band": {
+    "name": "Chardon Polka Band",
+    "aliases": [
+      "Chardon Polka Band"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "http://chardonpolkaband.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "donauschwaben-blaskapelle": {
+    "name": "Donauschwaben Blaskapelle",
+    "aliases": [
+      "Donauschwaben Blaskapelle"
+    ],
+    "genres": [
+      "polka",
+      "german"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.donauschwabencleveland.com/blaskapelle"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "da-land-brass-band": {
+    "name": "Da Land Brass Band",
+    "aliases": [
+      "Da Land Brass Band"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://dlbbcle.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "cleveland-alphorn-society": {
+    "name": "Cleveland Alphorn Society",
+    "aliases": [
+      "Cleveland Alphorn Society"
+    ],
+    "genres": [
+      "german"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://clevelandalphorn.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "burke-school-of-irish-dance": {
+    "name": "Burke School Of Irish Dance",
+    "aliases": [
+      "Burke School Of Irish Dance"
+    ],
+    "genres": [
+      "irish"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.burkeirishdancecleveland.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "yin-tang-chinese-blue-river-dragon-dance-team": {
+    "name": "Yin Tang Chinese Blue River Dragon Dance Team",
+    "aliases": [
+      "Yin Tang Chinese Blue River Dragon Dance Team"
+    ],
+    "genres": [
+      "chinese"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "cleveland-saxson-dance-group": {
+    "name": "Cleveland Saxson Dance Group",
+    "aliases": [
+      "Cleveland Saxson Dance Group"
+    ],
+    "genres": [
+      "german"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "piast-polish-folk-ensemble": {
+    "name": "Piast Polish Folk Ensemble",
+    "aliases": [
+      "Piast Polish Folk Ensemble"
+    ],
+    "genres": [
+      "polish",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "red-hackle-pipe-band": {
+    "name": "Red Hackle Pipe Band",
+    "aliases": [
+      "Red Hackle Pipe Band"
+    ],
+    "genres": [
+      "scottish"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "st-haralambos-hellenic-dancers": {
+    "name": "St. Haralambos Hellenic Dancers",
+    "aliases": [
+      "St. Haralambos Hellenic Dancers"
+    ],
+    "genres": [
+      "greek"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.stharalambos.com/groups-services/hellenic-dancers/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lynn-marie-the-nashville-polka-guys": {
+    "name": "Lynn Marie & The Nashville Polka Guys",
+    "aliases": [
+      "Lynn Marie & The Nashville Polka Guys"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.lynnmarie.net/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-brats-from-new-orleans": {
+    "name": "The Bräts From New Orleans",
+    "aliases": [
+      "The Bräts From New Orleans"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bavarian-schuhplattlers": {
+    "name": "Bavarian Schuhplattlers",
+    "aliases": [
+      "Bavarian Schuhplattlers"
+    ],
+    "genres": [
+      "german"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "madame-gigi-s-french-can-can-dancers": {
+    "name": "Madame Gigi's French Can Can Dancers",
+    "aliases": [
+      "Madame Gigi's French Can Can Dancers"
+    ],
+    "genres": [
+      "cabaret"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.cancangirls.org/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-alley-katz": {
+    "name": "The Alley Katz",
+    "aliases": [
+      "The Alley Katz"
+    ],
+    "genres": [
+      "covers",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "logan-wells": {
+    "name": "Logan Wells",
+    "aliases": [
+      "Logan Wells"
+    ],
+    "genres": [
+      "covers",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.loganwells.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "patti-ann": {
+    "name": "Patti Ann",
+    "aliases": [
+      "Patti Ann"
+    ],
+    "genres": [
+      "covers",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "aaron-dussing": {
+    "name": "Aaron Dussing",
+    "aliases": [
+      "Aaron Dussing"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "brian-papesh-party-band": {
+    "name": "Brian Papesh Party Band",
+    "aliases": [
+      "Brian Papesh Party Band"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.brianpapeshband.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "joey-tomsick-the-shotskis": {
+    "name": "Joey Tomsick & The Shotskis",
+    "aliases": [
+      "Joey Tomsick & The Shotskis"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-zolkas": {
+    "name": "The Zolkas",
+    "aliases": [
+      "The Zolkas"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "patty-c-the-guys": {
+    "name": "Patty C & The Guys",
+    "aliases": [
+      "Patty C & The Guys"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.pattycandtheguys.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "north-coast-prost": {
+    "name": "North Coast Prost",
+    "aliases": [
+      "North Coast Prost"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "north-union-street": {
+    "name": "North Union Street",
+    "aliases": [
+      "North Union Street"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/people/North-Union-Street/100093691284876/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dave-hinrich": {
+    "name": "Dave Hinrich",
+    "aliases": [
+      "Dave Hinrich"
+    ],
+    "genres": [
+      "covers",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://davehinrichmusic.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "macy-krew": {
+    "name": "Macy Krew",
+    "aliases": [
+      "Macy Krew"
+    ],
+    "genres": [
+      "country",
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.macykrew.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "kelly-daniels": {
+    "name": "Kelly Daniels",
+    "aliases": [
+      "Kelly Daniels"
+    ],
+    "genres": [
+      "country",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "matt-whataguy": {
+    "name": "Matt Whataguy",
+    "aliases": [
+      "Matt Whataguy"
+    ],
+    "genres": [
+      "pop",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mark-mason": {
+    "name": "Mark Mason",
+    "aliases": [
+      "Mark Mason"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "chad-baker": {
+    "name": "Chad Baker",
+    "aliases": [
+      "Chad Baker"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "joe-barron": {
+    "name": "Joe Barron",
+    "aliases": [
+      "Joe Barron"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "teddy-robb": {
+    "name": "Teddy Robb",
+    "aliases": [
+      "Teddy Robb"
+    ],
+    "genres": [
+      "country",
+      "pop",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kyle-elliott": {
+    "name": "Kyle Elliott",
+    "aliases": [
+      "Kyle Elliott"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "jake-dodds": {
+    "name": "Jake Dodds",
+    "aliases": [
+      "Jake Dodds"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "southbound": {
+    "name": "Southbound",
+    "aliases": [
+      "Southbound"
+    ],
+    "genres": [
+      "country",
+      "pop",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "devin-henry": {
+    "name": "Devin Henry",
+    "aliases": [
+      "Devin Henry"
+    ],
+    "genres": null,
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://devinhenrymusic.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "meyer-pavich": {
+    "name": "Meyer Pavich",
+    "aliases": [
+      "Meyer Pavich"
+    ],
+    "genres": [
+      "country",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "reece-gus-the-fifths": {
+    "name": "Reece Gus & The Fifths",
+    "aliases": [
+      "Reece Gus & The Fifths"
+    ],
+    "genres": [
+      "country",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.reecegusmusic.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rdna": {
+    "name": "RDNA",
+    "aliases": [
+      "RDNA"
+    ],
+    "genres": [
+      "covers",
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "martin-mcdaniel": {
+    "name": "Martin McDaniel",
+    "aliases": [
+      "Martin McDaniel"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "slugg": {
+    "name": "Slugg",
+    "aliases": [
+      "Slugg"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sound-on-tape": {
+    "name": "Sound On Tape",
+    "aliases": [
+      "Sound On Tape"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "corey-grand": {
+    "name": "Corey Grand",
+    "aliases": [
+      "Corey Grand"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kc-company": {
+    "name": "KC & Company",
+    "aliases": [
+      "KC & Company"
+    ],
+    "genres": [
+      "country",
+      "classic",
+      "rock",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tea-bags": {
+    "name": "Tea Bags",
+    "aliases": [
+      "Tea Bags"
+    ],
+    "genres": [
+      "classic",
+      "covers",
+      "dance-disco"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://teabagsband.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "chad-hoffman": {
+    "name": "Chad Hoffman",
+    "aliases": [
+      "Chad Hoffman"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "acoustic"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.chadsolo.com/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/ChadSolo/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jam-machine": {
+    "name": "Jam Machine",
+    "aliases": [
+      "Jam Machine"
+    ],
+    "genres": [
+      "covers",
+      "rock",
+      "rnb-soul"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "http://www.jammachinemusic.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mike-james": {
+    "name": "Mike James",
+    "aliases": [
+      "Mike James"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ik-dubaku": {
+    "name": "Ik Dubaku",
+    "aliases": [
+      "Ik Dubaku"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "pete-lazard": {
+    "name": "Pete Lazard",
+    "aliases": [
+      "Pete Lazard"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.petelazard.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "1988": {
+    "name": "1988",
+    "aliases": [
+      "1988"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://1988rocks.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "audiophile": {
+    "name": "Audiophile",
+    "aliases": [
+      "Audiophile"
+    ],
+    "genres": [
+      "covers",
+      "pop",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://audiophilecle.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "leisure-hour": {
+    "name": "Leisure Hour",
+    "aliases": [
+      "Leisure Hour"
+    ],
+    "genres": [
+      "indie",
+      "emo"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/leisure.hour/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/lesiurehour/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "vibe-direct": {
+    "name": "Vibe & Direct",
+    "aliases": [
+      "Vibe & Direct"
+    ],
+    "genres": [
+      "electronic-edm",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "boaterhead": {
+    "name": "Boaterhead",
+    "aliases": [
+      "Boaterhead"
+    ],
+    "genres": [
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "celestyn": {
+    "name": "Celestyn",
+    "aliases": [
+      "Celestyn"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "shooters-after-dark": {
+    "name": "Shooters After Dark",
+    "aliases": [
+      "Shooters After Dark"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "jeffrey-cruz": {
+    "name": "Jeffrey Cruz",
+    "aliases": [
+      "Jeffrey Cruz"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.jeffreycruzmusic.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "danny-christian": {
+    "name": "Danny Christian",
+    "aliases": [
+      "Danny Christian"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/mrdannychristian"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/MrDannyChristian/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sam-romano": {
+    "name": "Sam Romano",
+    "aliases": [
+      "Sam Romano"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "acoustic"
+    ],
+    "links": [
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/samromanomusic/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "yosemite-slim": {
+    "name": "Yosemite Slim",
+    "aliases": [
+      "Yosemite Slim"
+    ],
+    "genres": [
+      "country",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "cassius-g": {
+    "name": "Cassius G",
+    "aliases": [
+      "Cassius G"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "spaz": {
+    "name": "Spaz",
+    "aliases": [
+      "Spaz"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jim-ballard": {
+    "name": "Jim Ballard",
+    "aliases": [
+      "Jim Ballard"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "emma-nicholas": {
+    "name": "Emma Nicholas",
+    "aliases": [
+      "Emma Nicholas"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "e5c4p3": {
+    "name": "E5C4P3",
+    "aliases": [
+      "Journey Tribute by E5C4P3",
+      "E5C4P3",
+      "ESC4P3",
+      "ESCAPE"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers",
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "a-charlie-brown-holiday-tribute": {
+    "name": "A Charlie Brown Holiday Tribute",
+    "aliases": [
+      "A Charlie Brown Holiday Tribute"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "cigar-box-scott": {
+    "name": "Cigar Box Scott",
+    "aliases": [
+      "Cigar Box Scott"
+    ],
+    "genres": [
+      "folk-roots",
+      "blues",
+      "bluegrass"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://cigarboxscott.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "eric-seddon": {
+    "name": "Eric Seddon",
+    "aliases": [
+      "Eric Seddon"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/ericseddonmusician/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UCtmDiJZ14ABmsX0otNr_fZg/videos"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "gold-tones": {
+    "name": "Gold Tones",
+    "aliases": [
+      "Gold Tones"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "guy-pernetti": {
+    "name": "Guy Pernetti",
+    "aliases": [
+      "Guy Pernetti"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-john-mcgrail-group": {
+    "name": "The John McGrail Group",
+    "aliases": [
+      "The John McGrail Group"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "slow-burn": {
+    "name": "Slow Burn",
+    "aliases": [
+      "Slow Burn"
+    ],
+    "genres": [
+      "pop",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "third-law-collective": {
+    "name": "Third Law Collective",
+    "aliases": [
+      "Third Law Collective"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "outlab-experiments-in-improvised-music": {
+    "name": "Outlab: Experiments In Improvised Music",
+    "aliases": [
+      "Outlab: Experiments In Improvised Music",
+      "Outlab"
+    ],
+    "genres": [
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "brent-kirby": {
+    "name": "Brent Kirby",
+    "aliases": [
+      "Brent Kirby's 10x3 Songwriter/Band Showcase",
+      "Brent Kirby"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-sammy-deleon-and-jackie-warren-quartet": {
+    "name": "The Sammy Deleon and Jackie Warren Quartet",
+    "aliases": [
+      "The Sammy Deleon and Jackie Warren Quartet"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "personality-crisis-cle-punk-night": {
+    "name": "Personality Crisis (CLE Punk Night)",
+    "aliases": [
+      "Personality Crisis",
+      "CLE Punk Night"
+    ],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "dj-sayword": {
+    "name": "DJ Sayword",
+    "aliases": [
+      "DJ Sayword"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dennis-lewin": {
+    "name": "Dennis Lewin",
+    "aliases": [
+      "Dennis Lewin"
+    ],
+    "genres": [
+      "pianist"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://dennislewinmusic.com/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/dennis.lewin.9/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tricky-dick-and-the-cover-ups": {
+    "name": "Tricky Dick & the Cover-Ups",
+    "aliases": [
+      "Tricky Dick and the Cover-Ups",
+      "Tricky Dick and the Cover Ups",
+      "Tricky Dick & the Cover-Ups",
+      "Tricky Dick & the Cover Ups",
+      "Tricky Dick"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://trickydickcoverband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/trickydickcover/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/trickydickcoverband/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "basement-r-b-experience": {
+    "name": "Basement: R&B Experience",
+    "aliases": [
+      "Basement: R&B Experience"
+    ],
+    "genres": [
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "rush": {
+    "name": "Rush",
+    "aliases": [
+      "Rush"
+    ],
+    "genres": [
+      "classic",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.rush.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-night-owls": {
+    "name": "The Night Owls",
+    "aliases": [
+      "The Night Owls"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-caffrey": {
+    "name": "DJ Caffrey",
+    "aliases": [
+      "DJ Caffrey"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "classical-revolution": {
+    "name": "Classical Revolution",
+    "aliases": [
+      "Signal Cle Presents: Classical Revolution!",
+      "Classical Revolution"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "make-em-laugh-mondays": {
+    "name": "Make Em Laugh Mondays",
+    "aliases": [
+      "Make Em Laugh Mondays"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "secret-society-comedy-presents-one-more-joke": {
+    "name": "Secret Society Comedy Presents: One More Joke",
+    "aliases": [
+      "Secret Society Comedy Presents: One More Joke",
+      "Secret Society Comedy"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "poets-jam-with-ray-mcniece-and-the-tongue-in-groove-trio": {
+    "name": "Poets Jam with Ray McNiece and the Tongue in Groove Trio",
+    "aliases": [
+      "Poets Jam With Ray Mcniece And The Tongue In Groove Trio",
+      "Ray Mcniece"
+    ],
+    "genres": [
+      "poetry"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "the-people-poetry-open-mic-night": {
+    "name": "The People Poetry: Open Mic Night",
+    "aliases": [
+      "The People Poetry: Open Mic Night"
+    ],
+    "genres": [
+      "poetry"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "lyrical-rhythms": {
+    "name": "Lyrical Rhythms",
+    "aliases": [
+      "Lyrical Rhythms"
+    ],
+    "genres": [
+      "rnb-soul",
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "the-mercury-jam": {
+    "name": "The Mercury Jam",
+    "aliases": [
+      "The Mercury Jam"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "qweirdo": {
+    "name": "Qweirdo",
+    "aliases": [
+      "Qweirdo"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "billy-morris": {
+    "name": "Billy Morris",
+    "aliases": [
+      "Billy Morris"
+    ],
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "slacking": {
+    "name": "Slacking",
+    "aliases": [
+      "Slacking (PGH)",
+      "Slacking"
+    ],
+    "genres": [
+      "indie"
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "value": "https://slacking.bandcamp.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "osees": {
+    "name": "Osees",
+    "aliases": [
+      "Osees Featuring Brigid Dawson",
+      "Osees"
+    ],
+    "genres": [
+      "alternative",
+      "psych",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.theeohsees.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "come-undone": {
+    "name": "Come Undone",
+    "aliases": [
+      "Come Undone"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "pop",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "niiko-x-swae": {
+    "name": "Niiko x Swae",
+    "aliases": [
+      "Niiko x Swae"
+    ],
+    "genres": [
+      "electronic-edm"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "whos-bad": {
+    "name": "Who's Bad",
+    "aliases": [
+      "Who's Bad",
+      "Whos Bad",
+      "Who's Bad: The Ultimate Michael Jackson Experience"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.whosbadmusic.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bridge-the-gap": {
+    "name": "Bridge the Gap",
+    "aliases": [
+      "Bridge the Gap"
+    ],
+    "genres": [
+      "covers",
+      "classic",
+      "rock",
+      "pop",
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "eddie-majeski": {
+    "name": "Eddie Majeski",
+    "aliases": [
+      "Eddie Majeski"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-dollyhoppers": {
+    "name": "The Dollyhoppers",
+    "aliases": [
+      "The Dollyhoppers"
+    ],
+    "genres": [
+      "indie",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "noah-gittell": {
+    "name": "Noah Gittell",
+    "aliases": [
+      "Noah Gittell"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lovely-weather": {
+    "name": "Lovely Weather",
+    "aliases": [
+      "Lovely Weather"
+    ],
+    "genres": [
+      "indie",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/lovelyweathermusic/"
+      },
+      {
+        "label": "Bandcamp",
+        "value": "https://lovelyweather.bandcamp.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "karta-stella": {
+    "name": "Karta Stella",
+    "aliases": [
+      "Karta Stella"
+    ],
+    "genres": [
+      "alternative",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/karta_stella/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/kartastella/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bronx-country": {
+    "name": "Bronx Country",
+    "aliases": [
+      "Bronx Country"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "girl-cologne": {
+    "name": "Girl Cologne",
+    "aliases": [
+      "Girl Cologne"
+    ],
+    "genres": [
+      "alternative",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/girlcologne/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/girlcologne/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "riley-burke-band": {
+    "name": "Riley Burke Band",
+    "aliases": [
+      "Riley Burke Band",
+      "Riley Burke"
+    ],
+    "genres": [
+      "indie",
+      "pop",
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://rileyburke.co/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/rileyburke.music/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-velvet-gentlemen": {
+    "name": "The Velvet Gentlemen",
+    "aliases": [
+      "The Velvet Gentlemen",
+      "Velvet Gentlemen"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "last-pick": {
+    "name": "Last Pick",
+    "aliases": [
+      "Last Pick",
+      "Last Pick Band"
+    ],
+    "genres": [
+      "emo",
+      "indie"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/lastpickband/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/@LastPickBand"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "unknownphrazes": {
+    "name": "Unknownphrazes",
+    "aliases": [
+      "Unknownphrazes"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "namejai": {
+    "name": "Namejai",
+    "aliases": [
+      "Namejai"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "super-troupers": {
+    "name": "Super Troupers",
+    "aliases": [
+      "Super Troupers",
+      "Super Troopers"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "melrose-eve": {
+    "name": "Melrose Eve",
+    "aliases": [
+      "Melrose Eve"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "voodoo-child": {
+    "name": "Voodoo Child",
+    "aliases": [
+      "Voodoo Child"
+    ],
+    "genres": [
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-mike-filly": {
+    "name": "DJ Mike Filly",
+    "aliases": [
+      "DJ Mike Filly",
+      "Mike Filly"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "matt-moody": {
+    "name": "Matt Moody",
+    "aliases": [
+      "Matt Moody"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "eclipse": {
+    "name": "Eclipse",
+    "aliases": [
+      "Eclipse"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-scenic-route": {
+    "name": "The Scenic Route",
+    "aliases": [
+      "The Scenic Route"
+    ],
+    "genres": [
+      "pop",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "treble-in-cle": {
+    "name": "Treble in CLE",
+    "aliases": [
+      "Treble in CLE"
+    ],
+    "genres": [
+      "pop",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "rent-for-cheryl": {
+    "name": "Rent for Cheryl",
+    "aliases": [
+      "Rent for Cheryl"
+    ],
+    "genres": [
+      "indie",
+      "alternative",
+      "pop",
+      "blues",
+      "jazz",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/rentforcheryl/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/RentForCheryl/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/@RentForCheryl"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "wildbuilt": {
+    "name": "Wildbuilt",
+    "aliases": [
+      "Wildbuilt",
+      "Wild built"
+    ],
+    "genres": [
+      "indie",
+      "alternative",
+      "emo"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://wildbuiltmusic.carrd.co/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/wildbuiltmusic/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/@Wildbuilt-music"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jasmine-jeanise": {
+    "name": "Jasmine Jeanise",
+    "aliases": [
+      "Jasmine Jeanise"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "12k-gotti": {
+    "name": "12k Gotti",
+    "aliases": [
+      "12k Gotti"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-lovesick": {
+    "name": "DJ Lovesick",
+    "aliases": [
+      "DJ Lovesick"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "buffy-dj": {
+    "name": "Buffy DJ",
+    "aliases": [
+      "Buffy DJ"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jesse-jukebox": {
+    "name": "Jesse Jukebox",
+    "aliases": [
+      "Jesse Jukebox"
+    ],
+    "genres": [
+      "family-kids",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "birds-of-a-feather": {
+    "name": "Birds of a Feather",
+    "aliases": [
+      "Birds of a Feather"
+    ],
+    "genres": [
+      "family-kids",
+      "indie"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "shaker-breakers": {
+    "name": "Shaker Breakers",
+    "aliases": [
+      "Shaker Breakers"
+    ],
+    "genres": [
+      "family-kids"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "in-my-feelings": {
+    "name": "In My Feelings",
+    "aliases": [
+      "In My Feelings"
+    ],
+    "genres": [
+      "hiphop-rap",
+      "dj"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "dj-hg": {
+    "name": "DJ HG",
+    "aliases": [
+      "DJ HG"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-den-mother": {
+    "name": "DJ Den Mother",
+    "aliases": [
+      "DJ Den Mother"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "furious-bongos": {
+    "name": "The Furious Bongos",
+    "aliases": [
+      "The Furious Bongos",
+      "Furious Bongos"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://thefuriousbongos.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "earth-tongue": {
+    "name": "Earth Tongue",
+    "aliases": [
+      "Earth Tongue"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "brood-x": {
+    "name": "Brood X",
+    "aliases": [
+      "Brood X"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ted-riser": {
+    "name": "Ted Riser",
+    "aliases": [
+      "Ted Riser"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "becky-boyd-groove-train": {
+    "name": "Becky Boyd & the Groove Train",
+    "aliases": [
+      "Becky Boyd & the Groove Train",
+      "Becky Boyd and the Groove Train"
+    ],
+    "genres": [
+      "blues",
+      "jazz",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "paul-kovac": {
+    "name": "Paul Kovac",
+    "aliases": [
+      "Paul Kovac",
+      "Paul Kovac and Friends",
+      "Paul Kovac's Big 'Grass Band"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "bluegrass"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "2-chainz": {
+    "name": "2 CHAINZ",
+    "aliases": [
+      "2 CHAINZ"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.2chainz.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "swamp-boogie": {
+    "name": "Swamp Boogie",
+    "aliases": [
+      "Swamp Boogie",
+      "Swamp Boogie Band"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "blues",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "carnage-the-executioner": {
+    "name": "Carnage the Executioner",
+    "aliases": [
+      "Carnage the Executioner"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.carnagetheexecutioner.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "victim-in-pain": {
+    "name": "Victim in Pain",
+    "aliases": [
+      "Victim in Pain"
+    ],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "into-the-blue": {
+    "name": "Into the Blue",
+    "aliases": [
+      "Into the Blue"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "carlos-jones-plus-band": {
+    "name": "Carlos Jones & the PLUS Band",
+    "aliases": [
+      "Carlos Jones & the PLUS Band",
+      "Carlos Jones and the PLUS Band"
+    ],
+    "genres": [
+      "funk-reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mc4d": {
+    "name": "MC4D",
+    "aliases": [
+      "MC4D"
+    ],
+    "genres": [
+      "dj",
+      "country",
+      "electronic-edm"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "latin-city-soul-band": {
+    "name": "Latin City Soul Band",
+    "aliases": [
+      "Latin City Soul Band"
+    ],
+    "genres": [
+      "latin",
+      "rnb-soul",
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kimmi-bitter": {
+    "name": "Kimmi Bitter",
+    "aliases": [
+      "Kimmi Bitter"
+    ],
+    "genres": [
+      "country",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tea-dances": {
+    "name": "Tea Dances",
+    "aliases": [
+      "Tea Dances"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "eastwind": {
+    "name": "Eastwind",
+    "aliases": [
+      "Eastwind"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "medusa": {
+    "name": "Medusa",
+    "aliases": [
+      "Medusa"
+    ],
+    "genres": [
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "china-grove": {
+    "name": "China Grove",
+    "aliases": [
+      "China Grove"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "johnny-koenig": {
+    "name": "Johnny Koenig",
+    "aliases": [
+      "Johnny Koenig"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "vader": {
+    "name": "Vader",
+    "aliases": [
+      "Vader"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.vader-store.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "cloudy-thee-queen": {
+    "name": "Cloudy Thee Queen",
+    "aliases": [
+      "Cloudy Thee Queen",
+      "Cloudy with a Chance"
+    ],
+    "genres": [
+      "drag"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "steve-aoki": {
+    "name": "Steve Aoki",
+    "aliases": [
+      "Steve Aoki"
+    ],
+    "genres": [
+      "dj",
+      "electronic-edm"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://steveaoki.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rock-roll-love machine": {
+    "name": "Rock & Roll Love Machine",
+    "aliases": [
+      "Rock & Roll Love Machine"
+    ],
+    "genres": [
+      "event"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "craft-cocktails": {
+    "name": "Learn Hands-On Craft Cocktails",
+    "aliases": [
+      "Learn Hands-On Craft Cocktails",
+      "Learn Hands On Craft Cocktails"
+    ],
+    "genres": [
+      "event"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "backstage-stories": {
+    "name": "Backstage Stories",
+    "aliases": [
+      "Backstage Stories"
+    ],
+    "genres": [
+      "event"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "diamond-project": {
+    "name": "Diamond Project",
+    "aliases": [
+      "Diamond Project"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "gemutlichkeit-clevelander-musikanten": {
+    "name": "Gemütlichkeit Cleveländer Musikanten",
+    "aliases": [
+      "Gemütlichkeit Cleveländer Musikanten",
+      "Gemutlekeit Clevelander Musikanten",
+      "Gemutlichkeit Clevelander Musikanten"
+    ],
+    "genres": [
+      "german"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "walt-sanders-cadillac-band": {
+    "name": "Walt Sanders & the Cadillac Band",
+    "aliases": [
+      "Walt Sanders & the Cadillac Band",
+      "Walt Sanders and the Cadillac Band"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bruce-in-the-usa": {
+    "name": "Bruce in the USA",
+    "aliases": [
+      "Bruce in the USA"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.bruceintheusa.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "nerd-night": {
+    "name": "Nerd Night",
+    "aliases": [
+      "Nerd Night"
+    ],
+    "genres": [
+      "event",
+      "trivia-games"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "joshua-donato": {
+    "name": "Joshua Donato",
+    "aliases": [
+      "Joshua Donato",
+      "Josh Donato"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bringmetheolive": {
+    "name": "BRINGMETHEOLIVE",
+    "aliases": [
+      "BRINGMETHEOLIVE",
+      "Anime Pop Night"
+    ],
+    "genres": [
+      "dj",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "chuck-fink": {
+    "name": "Chuck Fink",
+    "aliases": [
+      "Chuck Fink"
+    ],
+    "genres": [
+      "folk-roots",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "toby-raps": {
+    "name": "Toby RAPS",
+    "aliases": [
+      "Toby RAPS"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jazz-cats": {
+    "name": "Jazz Cats",
+    "aliases": [
+      "Jazz Cats"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "a-glass-of-vino": {
+    "name": "A Glass of Vino",
+    "aliases": [
+      "A Glass of Vino"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-road-warrior": {
+    "name": "The Road Warrior",
+    "aliases": [
+      "The Road Warrior"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kiss-me-deadly": {
+    "name": "Kiss Me Deadly",
+    "aliases": [
+      "Kiss Me Deadly"
+    ],
+    "genres": [
+      "indie",
+      "pop",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "velocity-stax": {
+    "name": "Velocity Stax",
+    "aliases": [
+      "Velocity Stax"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "by-light-we-loom": {
+    "name": "By Light We Loom",
+    "aliases": [
+      "By Light We Loom"
+    ],
+    "genres": [
+      "indie",
+      "pop",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ruairi-hurley-and-carrie-king": {
+    "name": "Ruairi Hurley and Carrie King",
+    "aliases": [
+      "Ruairi Hurley and Carrie King"
+    ],
+    "genres": [
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kozak-and-davidson-duo": {
+    "name": "Kozak and Davidson Duo",
+    "aliases": [
+      "Kozak and Davidson Duo"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "alan-greene-band": {
+    "name": "Alan Greene Band",
+    "aliases": [
+      "Alan Greene Band"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "roadkill-revolution": {
+    "name": "Roadkill Revolution",
+    "aliases": [
+      "Roadkill Revolution"
+    ],
+    "genres": [
+      "pop",
+      "punk-ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "civic-summer": {
+    "name": "Civic Summer",
+    "aliases": [
+      "Civic Summer"
+    ],
+    "genres": [
+      "rock",
+      "classic"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "james-douglas": {
+    "name": "James Douglas",
+    "aliases": [
+      "James Douglas"
+    ],
+    "genres": [
+      "folk-roots",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "grace-oddo": {
+    "name": "Grace Oddo",
+    "aliases": [
+      "Grace Oddo"
+    ],
+    "genres": [
+      "pop",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "neekesh-and-the-band": {
+    "name": "Neekesh and the Band",
+    "aliases": [
+      "Neekesh and the Band"
+    ],
+    "genres": [
+      "nepalese"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mr-haney-friends": {
+    "name": "Mr. Haney & Friends",
+    "aliases": [
+      "Mr. Haney & Friends",
+      "Mr. Haney"
+    ],
+    "genres": [
+      "family-kids"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-lily-jade": {
+    "name": "DJ Lily Jade",
+    "aliases": [
+      "DJ Lily Jade"
+    ],
+    "genres": [
+      "dj",
+      "family-kids",
+      "dance-disco"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sweet-willy-and-the-solid-cats": {
+    "name": "Sweet Willy and the Solid Cats",
+    "aliases": [
+      "Sweet Willy and the Solid Cats",
+      "Sweet Willy & the Solid Cats"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "colleen-welsch": {
+    "name": "Colleen Welsch",
+    "aliases": [
+      "Colleen Welsch"
+    ],
+    "genres": [
+      "pop",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "music-izzey-groovy": {
+    "name": "Music Izzey Groovy",
+    "aliases": [
+      "Music Izzey Groovy"
+    ],
+    "genres": [
+      "family-kids"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "with-windswept-hair": {
+    "name": "With Windswept Hair",
+    "aliases": [
+      "With Windswept Hair"
+    ],
+    "genres": [
+      "indie",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lonesome-bones": {
+    "name": "Lonesome Bones",
+    "aliases": [
+      "Lonesome Bones"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "charity-evonna": {
+    "name": "Charity Evonna",
+    "aliases": [
+      "Charity Evonna"
+    ],
+    "genres": [
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-super-babes": {
+    "name": "The Super Babes",
+    "aliases": [
+      "The Super Babes"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "craig-rich": {
+    "name": "Craig Rich",
+    "aliases": [
+      "Craig Rich"
+    ],
+    "genres": [
+      "alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kate-kooser": {
+    "name": "Kate Kooser",
+    "aliases": [
+      "Kate Kooser"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "alla-boara": {
+    "name": "Alla Boara",
+    "aliases": [
+      "Alla Boara"
+    ],
+    "genres": [
+      "folk-roots",
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "shortt-stories": {
+    "name": "Shortt Stories",
+    "aliases": [
+      "Shortt Stories"
+    ],
+    "genres": [
+      "acoustic",
+      "alternative",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "charlie-mosbrook": {
+    "name": "Charlie Mosbrook",
+    "aliases": [
+      "Charlie Mosbrook"
+    ],
+    "genres": [
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tweed": {
+    "name": "Tweed",
+    "aliases": [
+      "Tweed"
+    ],
+    "genres": [
+      "irish",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mossom": {
+    "name": "MOSSOM",
+    "aliases": [
+      "MOSSOM"
+    ],
+    "genres": [
+      "alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-bakers-basement": {
+    "name": "The Baker's Basement",
+    "aliases": [
+      "The Baker's Basement"
+    ],
+    "genres": [
+      "indie",
+      "folk-roots",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "warren-bendler": {
+    "name": "Warren Bendler",
+    "aliases": [
+      "Warren Bendler"
+    ],
+    "genres": [
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "david-loy-and-the-ramrods": {
+    "name": "David Loy and the Ramrods",
+    "aliases": [
+      "David Loy and the Ramrods"
+    ],
+    "genres": [
+      "folk-roots",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bill-lestock": {
+    "name": "Bill Lestock",
+    "aliases": [
+      "Bill Lestock"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "first-class-citizens": {
+    "name": "First Class Citizens",
+    "aliases": [
+      "First Class Citizens"
+    ],
+    "genres": [
+      "poetry",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "synergy": {
+    "name": "Synergy",
+    "aliases": [
+      "Synergy"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "cats-on-holiday": {
+    "name": "Cats on Holiday",
+    "aliases": [
+      "Cats on Holiday"
+    ],
+    "genres": [
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "maura-rogers-and-the-bellows": {
+    "name": "Maura Rogers and the Bellows",
+    "aliases": [
+      "Maura Rogers and the Bellows"
+    ],
+    "genres": [
+      "folk-roots",
+      "alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "matt-harmon": {
+    "name": "Matt Harmon",
+    "aliases": [
+      "Matt Harmon"
+    ],
+    "genres": [
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tracy-marie": {
+    "name": "Tracy Marie",
+    "aliases": [
+      "Tracy Marie"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "blues",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bob-frank": {
+    "name": "Bob Frank",
+    "aliases": [
+      "Bob Frank"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ashley-brooke-toussant": {
+    "name": "Ashley Brooke Toussant",
+    "aliases": [
+      "Ashley Brooke Toussant"
+    ],
+    "genres": [
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "morgan-mecaskey": {
+    "name": "Morgan Mecaskey",
+    "aliases": [
+      "Morgan Mecaskey"
+    ],
+    "genres": [
+      "indie",
+      "rock",
+      "folk-roots",
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "epilogue": {
+    "name": "Epilogue",
+    "aliases": [
+      "Epilogue"
+    ],
+    "genres": [
+      "blues",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sean-benjamin": {
+    "name": "Sean Benjamin",
+    "aliases": [
+      "Sean Benjamin"
+    ],
+    "genres": [
+      "acoustic",
+      "alternative",
+      "funk-reggae",
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "aj-and-the-woods": {
+    "name": "AJ and the Woods",
+    "aliases": [
+      "AJ and the Woods"
+    ],
+    "genres": [
+      "folk-roots",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-tk": {
+    "name": "DJ TK",
+    "aliases": [
+      "DJ TK"
+    ],
+    "genres": [
+      "dj",
+      "electronic-edm"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mariachi-santa-cecilia": {
+    "name": "Mariachi Santa Cecilia",
+    "aliases": [
+      "Mariachi Santa Cecilia"
+    ],
+    "genres": [
+      "latin",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jeff-holland": {
+    "name": "Jeff Holland",
+    "aliases": [
+      "Jeff Holland"
+    ],
+    "genres": [
+      "indie",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dan-maier-trio": {
+    "name": "Dan Maier Trio",
+    "aliases": [
+      "Dan Maier Trio"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "saralila": {
+    "name": "Saralila",
+    "aliases": [
+      "Saralila"
+    ],
+    "genres": [
+      "folk-roots",
+      "indie"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "city-lite-trio": {
+    "name": "City Lite Trio",
+    "aliases": [
+      "City Lite Trio"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "blues",
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "apostle-jones": {
+    "name": "Apostle Jones",
+    "aliases": [
+      "Apostle Jones"
+    ],
+    "genres": [
+      "rnb-soul",
+      "rock",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "musicologie": {
+    "name": "Musicologie",
+    "aliases": [
+      "Musicologie"
+    ],
+    "genres": [
+      "family-kids",
+      "rock",
+      "pop",
+      "alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tony-quarles-and-the-discovery-band": {
+    "name": "Tony Quarles and the Discovery Band",
+    "aliases": [
+      "Tony Quarles and the Discovery Band"
+    ],
+    "genres": [
+      "rnb-soul",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tim-matson": {
+    "name": "Tim Matson",
+    "aliases": [
+      "Tim Matson"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "boomers-330": {
+    "name": "Boomers 330",
+    "aliases": [
+      "Boomers 330"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-sidemen": {
+    "name": "The Sidemen",
+    "aliases": [
+      "The Sidemen"
+    ],
+    "genres": [
+      "classic",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "get-back": {
+    "name": "Get Back",
+    "aliases": [
+      "Get Back"
+    ],
+    "genres": [
+      "tribute",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "outside-friends": {
+    "name": "Outside Friends",
+    "aliases": [
+      "Outside Friends"
+    ],
+    "genres": [
+      "indie",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hum-and-strum": {
+    "name": "Hum and Strum",
+    "aliases": [
+      "Hum and Strum"
+    ],
+    "genres": [
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "yiddishe-cup": {
+    "name": "Yiddishe Cup",
+    "aliases": [
+      "Yiddishe Cup"
+    ],
+    "genres": [
+      "klezmer",
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mekimi": {
+    "name": "Mekimi",
+    "aliases": [
+      "Mekimi"
+    ],
+    "genres": [
+      "classic",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "gary-lee": {
+    "name": "Gary Lee",
+    "aliases": [
+      "Gary Lee"
+    ],
+    "genres": [
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "allen-littman": {
+    "name": "Allen Littman",
+    "aliases": [
+      "Allen Littman"
+    ],
+    "genres": [
+      "indie",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "melonhead": {
+    "name": "Melonhead",
+    "aliases": [
+      "Melonhead"
+    ],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "breaking-point": {
+    "name": "Breaking Point",
+    "aliases": [
+      "Breaking Point"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "pop",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-blue-drivers": {
+    "name": "The Blue Drivers",
+    "aliases": [
+      "The Blue Drivers"
+    ],
+    "genres": [
+      "blues",
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dave-zup": {
+    "name": "Dave Zup",
+    "aliases": [
+      "Dave Zup"
+    ],
+    "genres": [
+      "hiphop-rap",
+      "funk-reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tom-shaper-and-the-resistance": {
+    "name": "Tom Shaper and the Resistance",
+    "aliases": [
+      "Tom Shaper and the Resistance"
+    ],
+    "genres": [
+      "covers",
+      "blues",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "valentine-ventura": {
+    "name": "Valentine Ventura",
+    "aliases": [
+      "Valentine Ventura"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "nathan-paul": {
+    "name": "Nathan-Paul",
+    "aliases": [
+      "Nathan-Paul"
+    ],
+    "genres": [
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tri-tones-surf-and-rock-band": {
+    "name": "Tri-Tones Surf and Rock Band",
+    "aliases": [
+      "Tri-Tones Surf and Rock Band"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ziggy-d": {
+    "name": "Ziggy D.",
+    "aliases": [
+      "Ziggy D.",
+      "Ziggy D"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-trapathonjerm": {
+    "name": "DJ Trapathonjerm",
+    "aliases": [
+      "DJ Trapathonjerm"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-casualtearsintheclub": {
+    "name": "DJ Casualtearsintheclub",
+    "aliases": [
+      "DJ Casualtearsintheclub"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bill-squire": {
+    "name": "Bill Squire",
+    "aliases": [
+      "Bill Squire"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "american-aquarium": {
+    "name": "American Aquarium",
+    "aliases": [
+      "American Aquarium"
+    ],
+    "genres": [
+      "alternative",
+      "country"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.americanaquarium.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "fyodor-novotny": {
+    "name": "Fyodor Novotny",
+    "aliases": [
+      "Fyodor Novotny"
+    ],
+    "genres": [
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "davy-knowles": {
+    "name": "Davy Knowles",
+    "aliases": [
+      "Davy Knowles"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "blues",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "freddy-hill": {
+    "name": "Freddy Hill",
+    "aliases": [
+      "Freddy Hill"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "wu-tang-clan": {
+    "name": "Wu-Tang Clan",
+    "aliases": [
+      "Wu-Tang Clan",
+      "Wutang Clan"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://thewutangclan.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "joel-link": {
+    "name": "Joel Link",
+    "aliases": [
+      "Joel Link"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "nathaniel-silberschlag": {
+    "name": "Nathaniel Silberschlag",
+    "aliases": [
+      "Nathaniel Silberschlag"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dawoon-chung": {
+    "name": "Dawoon Chung",
+    "aliases": [
+      "Dawoon Chung"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "remo-drive": {
+    "name": "Remo Drive",
+    "aliases": [
+      "Remo Drive"
+    ],
+    "genres": [
+      "indie",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.remodriveband.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "chad-gray": {
+    "name": "Chad Gray",
+    "aliases": [
+      "Chad Gray"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.chadnesss333.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "sex-mex": {
+    "name": "Sex Mex",
+    "aliases": [
+      "Sex Mex"
+    ],
+    "genres": [
+      "punk-ska",
+      "electronic-edm"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://sexmexsux.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "furious-george-hartwig": {
+    "name": "Furious George Hartwig",
+    "aliases": [
+      "Furious George Hartwig",
+      "Furious George",
+      "FGH"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ian-mcconnell": {
+    "name": "Ian McConnell",
+    "aliases": [
+      "Ian McConnell"
+    ],
+    "genres": [
+      "comedy",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "cherokee-social": {
+    "name": "Cherokee Social",
+    "aliases": [
+      "Cherokee Social"
+    ],
+    "genres": [
+      "indie",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.cherokeesocial.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/cherokee.social/?hl=en"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/3BA0AjT1znMXddbdsT2jJD?si=KHWboD4cQyS5ERp2ijkj6A"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "lilieae": {
+    "name": "Lilieae",
+    "aliases": [
+      "Lilieae"
+    ],
+    "genres": [
+      "pop",
+      "punk-ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "messmaker": {
+    "name": "MESSMAKER",
+    "aliases": [
+      "MESSMAKER"
+    ],
+    "genres": [
+      "indie",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ohayo": {
+    "name": "Ohayo",
+    "aliases": [
+      "Ohayo"
+    ],
+    "genres": [
+      "rock",
+      "rnb-soul",
+      "funk-reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ardamus-and-rnl": {
+    "name": "Ardamus and RNL",
+    "aliases": [
+      "Ardamus and RNL"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sabon": {
+    "name": "SABON",
+    "aliases": [
+      "SABON"
+    ],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/sabonband/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6nsOYGgFlgBbKTWeWBw6Xc"
+      },
+      {
+        "label": "TikTok",
+        "value": "https://www.tiktok.com/@sabonbandofficial"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-lookout-service": {
+    "name": "The Lookout Service",
+    "aliases": [
+      "The Lookout Service"
+    ],
+    "genres": [
+      "rock",
+      "indie"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hed-cheez": {
+    "name": "Hed Cheez",
+    "aliases": [
+      "Hed Cheez"
+    ],
+    "genres": [
+      "electronic-edm",
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dream-float": {
+    "name": "Dream Float",
+    "aliases": [
+      "Dream Float"
+    ],
+    "genres": [
+      "jazz",
+      "funk-reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dimitri-nassar-trio": {
+    "name": "Dimitri Nassar Trio",
+    "aliases": [
+      "Dimitri Nassar Trio"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "wave-magnetik": {
+    "name": "Wave Magnetik",
+    "aliases": [
+      "Wave Magnetik"
+    ],
+    "genres": [
+      "jazz",
+      "electronic-edm",
+      "dance-disco"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-mars-express": {
+    "name": "The Mars Express",
+    "aliases": [
+      "The Mars Express"
+    ],
+    "genres": [
+      "jazz",
+      "rnb-soul",
+      "funk-reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sugardeer": {
+    "name": "Sugardeer",
+    "aliases": [
+      "Sugardeer"
+    ],
+    "genres": [
+      "indie",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-zerbo-brothers": {
+    "name": "The Zerbo Brothers",
+    "aliases": [
+      "The Zerbo Brothers"
+    ],
+    "genres": [
+      "african",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "non-bruises": {
+    "name": "Non Bruises",
+    "aliases": [
+      "Non Bruises"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "homedays": {
+    "name": "Homedays",
+    "aliases": [
+      "Homedays"
+    ],
+    "genres": [
+      "alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "rellick": {
+    "name": "Rellick",
+    "aliases": [
+      "Rellick"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.rellick.net/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/sabonband/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6nsOYGgFlgBbKTWeWBw6Xc"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "whats-his-face-and-friends": {
+    "name": "Whats His Face and Friends",
+    "aliases": [
+      "Whats His Face and Friends"
+    ],
+    "genres": [
+      "hiphop-rap",
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "country-honk": {
+    "name": "Country Honk",
+    "aliases": [
+      "Country Honk"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "beach-city-postal-service": {
+    "name": "Beach City Postal Service",
+    "aliases": [
+      "Beach City Postal Service"
+    ],
+    "genres": [
+      "folk-roots",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "grumpy-plum": {
+    "name": "Grumpy Plum",
+    "aliases": [
+      "Grumpy Plum"
+    ],
+    "genres": [
+      "indie",
+      "pop",
+      "punk-ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lemoyne-alexander": {
+    "name": "Lemoyne Alexander",
+    "aliases": [
+      "Lemoyne Alexander"
+    ],
+    "genres": [
+      "alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "time-cat": {
+    "name": "Time Cat",
+    "aliases": [
+      "Time Cat"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://timecat.wixsite.com/music"
+      },
+      {
+        "label": "Instagram",
+        "value": "http://www.instagram.com/time_cat_"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/TimeCatMusic/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "a-m-the-queen": {
+    "name": "A.M. The Queen",
+    "aliases": [
+      "A.M. The Queen"
+    ],
+    "genres": [
+      "hiphop-rap",
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "scorch-steezy": {
+    "name": "Scorch Steezy",
+    "aliases": [
+      "Scorch Steezy"
+    ],
+    "genres": [
+      "alternative",
+      "folk-roots",
+      "country",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "anna-beau": {
+    "name": "Anna Beau",
+    "aliases": [
+      "Anna Beau"
+    ],
+    "genres": [
+      "indie",
+      "pop",
+      "folk-roots",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dust-and-debris": {
+    "name": "Dust and Debris",
+    "aliases": [
+      "Dust and Debris"
+    ],
+    "genres": [
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "macho-texans": {
+    "name": "Macho Texans",
+    "aliases": [
+      "Macho Texans"
+    ],
+    "genres": [
+      "folk-roots",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "moko-bovo": {
+    "name": "Moko Bovo",
+    "aliases": [
+      "Moko Bovo"
+    ],
+    "genres": [
+      "experimental",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "waylonfingers-friends": {
+    "name": "WaylonFingers & Friends",
+    "aliases": [
+      "WaylonFingers & Friends"
+    ],
+    "genres": [
+      "bluegrass"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ballinloch": {
+    "name": "Ballinloch",
+    "aliases": [
+      "Ballinloch"
+    ],
+    "genres": [
+      "irish",
+      "folk-roots"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "frida-and-the-mann": {
+    "name": "Frida and the Mann",
+    "aliases": [
+      "Frida and the Mann"
+    ],
+    "genres": [
+      "alternative",
+      "rock",
+      "indie",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "fox-ears": {
+    "name": "Fox Ears",
+    "aliases": [
+      "Fox Ears"
+    ],
+    "genres": [
+      "funk-reggae",
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jack-and-the-optimists": {
+    "name": "Jack and The Optimists",
+    "aliases": [
+      "Jack and The Optimists"
+    ],
+    "genres": [
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "colin-miller-the-brother-nature": {
+    "name": "Colin Miller & The Brother Nature",
+    "aliases": [
+      "Colin Miller & The Brother Nature"
+    ],
+    "genres": [
+      "rnb-soul",
+      "funk-reggae",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "guy-snowdon": {
+    "name": "Guy Snowdon",
+    "aliases": [
+      "Guy Snowdon"
+    ],
+    "genres": [
+      "blues",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "rustic-skies": {
+    "name": "Rustic Skies",
+    "aliases": [
+      "Rustic Skies"
+    ],
+    "genres": [
+      "indie",
+      "jazz",
+      "funk-reggae",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "nature-nvoke": {
+    "name": "Nature Nvoke",
+    "aliases": [
+      "Nature Nvoke"
+    ],
+    "genres": [
+      "punk-ska",
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "goodmorning-valentine": {
+    "name": "Goodmorning Valentine",
+    "aliases": [
+      "Goodmorning Valentine"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "moon-echo-garden": {
+    "name": "Moon Echo Garden",
+    "aliases": [
+      "Moon Echo Garden"
+    ],
+    "genres": [
+      "psych",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hyperius-blake-trio": {
+    "name": "Hyperius Blake Trio",
+    "aliases": [
+      "Hyperius Blake Trio"
+    ],
+    "genres": [
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "anitakeys": {
+    "name": "anitakeys",
+    "aliases": [
+      "anitakeys"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-outdoor-cat": {
+    "name": "DJ Outdoor Cat",
+    "aliases": [
+      "DJ Outdoor Cat",
+      "DJ Outdoorcat"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "vegan-cannibals": {
+    "name": "Vegan Cannibals",
+    "aliases": [
+      "Vegan Cannibals"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "maria-petti": {
+    "name": "Maria Petti",
+    "aliases": [
+      "Maria Petti"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.mariapetti.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/mpettimusic"
+      },
+      {
+        "label": "Facebook",
+        "value": "http://www.facebook.com/mariapettimusic"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "adam-ofarrills": {
+    "name": "Adam O’Farrill",
+    "aliases": [
+      "Adam O’Farrill"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "amalgamation": {
+    "name": "Amalgamation",
+    "aliases": [
+      "Amalgamation"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "andy-burns": {
+    "name": "Andy Burns",
+    "aliases": [
+      "Andy Burns"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "angelo-maneage": {
+    "name": "Angelo Maneage",
+    "aliases": [
+      "Angelo Maneage"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "armstrong-bearcat-band": {
+    "name": "Armstrong Bearcat Band",
+    "aliases": [
+      "Armstrong Bearcat Band"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "atta-boy": {
+    "name": "Atta Boy",
+    "aliases": [
+      "Atta Boy"
+    ],
+    "genres": [
+      "indie",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://attaboyonline.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/weareattaboy/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UCsu0_m5Kjh42Iv6crTYfjEA"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "b-o-b": {
+    "name": "B.o.B.",
+    "aliases": [
+      "B.o.B."
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bloodrave": {
+    "name": "BLOODRAVE",
+    "aliases": [
+      "BLOODRAVE"
+    ],
+    "genres": [
+      "electronic-edm"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bastard-cross": {
+    "name": "Bastard Cröss",
+    "aliases": [
+      "Bastard Cröss",
+      "Bastard Cross"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bella-grazia": {
+    "name": "Bella Grazia",
+    "aliases": [
+      "Bella Grazia"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bethany-joy": {
+    "name": "Bethany Joy",
+    "aliases": [
+      "Bethany Joy"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bill-ransom-trio": {
+    "name": "Bill Ransom Trio",
+    "aliases": [
+      "Bill Ransom Trio"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "billy-idol": {
+    "name": "Billy Idol",
+    "aliases": [
+      "Billy Idol"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "black-label-society": {
+    "name": "Black Label Society",
+    "aliases": [
+      "Black Label Society"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bluewater-chamber-orchestra": {
+    "name": "BlueWater Chamber Orchestra",
+    "aliases": [
+      "BlueWater Chamber Orchestra"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://bluewaterchamberorchestra.org/"
+      }
+    ],
+    "links": [
+      "https://bluewaterchamberorchestra.org/"
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "cory-grinder-the-playboy-scouts": {
+    "name": "Cory Grinder & The Playboy Scouts",
+    "aliases": [
+      "Cory Grinder & The Playboy Scouts",
+      "Cory Grinder and The Playboy Scouts"
+    ],
+    "genres": [
+      "bluegrass"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bootleg-service": {
+    "name": "Bootleg Service",
+    "aliases": [
+      "Bootleg Service"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "boyd-and-the-monkeys": {
+    "name": "Boyd and the Monkeys",
+    "aliases": [
+      "Boyd and the Monkeys"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "branford-marsalis-and-dianne-reeves": {
+    "name": "Branford Marsalis and Dianne Reeves",
+    "aliases": [
+      "Branford Marsalis and Dianne Reeves"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "brett-thomas": {
+    "name": "Brett Thomas",
+    "aliases": [
+      "Brett Thomas"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "c-c-acoustic-jazz-duo": {
+    "name": "C&C Acoustic Jazz Duo",
+    "aliases": [
+      "C&C Acoustic Jazz Duo"
+    ],
+    "genres": [
+      "jazz",
+      "acoustic"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "cam-godfrey": {
+    "name": "Cam Godfrey",
+    "aliases": [
+      "Cam Godfrey"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "chemical-baths": {
+    "name": "Chemical Baths",
+    "aliases": [
+      "Chemical Baths"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "cognitive": {
+    "name": "Cognitive",
+    "aliases": [
+      "Cognitive"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "esther-fitz": {
+    "name": "Esther Fitz",
+    "aliases": [
+      "Esther Fitz"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "corey-b": {
+    "name": "Corey B",
+    "aliases": [
+      "Corey B"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.coreyb.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "cowboy-princess-brigade": {
+    "name": "Cowboy Princess Brigade",
+    "aliases": [
+      "Cowboy Princess Brigade"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "atticus-sorrell": {
+    "name": "Atticus Sorrell",
+    "aliases": [
+      "Atticus Sorrell"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "crystal-bowersox": {
+    "name": "Crystal Bowersox",
+    "aliases": [
+      "Crystal Bowersox"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "curse-the-alchemist": {
+    "name": "Curse The Alchemist",
+    "aliases": [
+      "Curse The Alchemist"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/cursethealchemist/"
+      },
+      {
+        "label": "TikTok",
+        "value": "https://www.tiktok.com/@cursethealchemist"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-dave-mcnally": {
+    "name": "DJ Dave McNally",
+    "aliases": [
+      "DJ Dave McNally"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-mark-galauner": {
+    "name": "DJ Mark Galauner",
+    "aliases": [
+      "DJ Mark Galauner"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-dommie-salami": {
+    "name": "DJ Dommie Salami",
+    "aliases": [
+      "DJ Dommie Salami"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-kishka": {
+    "name": "DJ Kishka",
+    "aliases": [
+      "DJ Kishka"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-mes": {
+    "name": "DJ Mes",
+    "aliases": [
+      "DJ Mes"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dave-sterners-tricotism-jazz-trio": {
+    "name": "Dave Sterner's Tricotism Jazz Trio",
+    "aliases": [
+      "Dave Sterner's Tricotism Jazz Trio"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dirty-sound-magnet": {
+    "name": "Dirty Sound Magnet",
+    "aliases": [
+      "Dirty Sound Magnet"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "disco-dom": {
+    "name": "Disco Dom",
+    "aliases": [
+      "Disco Dom"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "donauschwaben-kulturgruppe": {
+    "name": "Donauschwaben Kulturgruppe",
+    "aliases": [
+      "Donauschwaben Kulturgruppe"
+    ],
+    "genres": [
+      "german"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "driving-rain": {
+    "name": "Driving Rain",
+    "aliases": [
+      "Driving Rain"
+    ],
+    "genres": [
+      "classic",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/drivingrainbandCLE/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UC0OQNSx2tx_UnLWeTn0FEeA"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "dueling-pianos": {
+    "name": "Dueling Pianos",
+    "aliases": [
+      "Dueling Pianos"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dylan-the-dead": {
+    "name": "Dylan & The Dead",
+    "aliases": [
+      "Dylan & The Dead"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "eastbound-band": {
+    "name": "Eastbound Band",
+    "aliases": [
+      "Eastbound Band"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "elvis": {
+    "name": "Elvis",
+    "aliases": [
+      "Elvis"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "elvis-costello-the-imposters": {
+    "name": "Elvis Costello & The Imposters",
+    "aliases": [
+      "Elvis Costello & The Imposters",
+      "Elvis Costello"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "en-vogue": {
+    "name": "En Vogue",
+    "aliases": [
+      "En Vogue"
+    ],
+    "genres": [
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "erin-nicole-neal-the-chill": {
+    "name": "Erin Nicole Neal & The Chill",
+    "aliases": [
+      "Erin Nicole Neal & The Chill"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "for-your-health": {
+    "name": "For Your Health",
+    "aliases": [
+      "For Your Health"
+    ],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.foryourhealthoh.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/foryourhealthoh"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/foryourhealthOH/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "fuzz-worth": {
+    "name": "Fuzz Worth",
+    "aliases": [
+      "Fuzz Worth"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "gavin-adcock": {
+    "name": "Gavin Adcock",
+    "aliases": [
+      "Gavin Adcock"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "gerad-g": {
+    "name": "Gerad G",
+    "aliases": [
+      "Gerad G"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "glass-house": {
+    "name": "Glass House",
+    "aliases": [
+      "Glass House"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "guggy": {
+    "name": "Guggy",
+    "aliases": [
+      "Guggy"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "higher-ground": {
+    "name": "Higher Ground",
+    "aliases": [
+      "Higher Ground"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "horizon-trio": {
+    "name": "Horizon Trio",
+    "aliases": [
+      "Horizon Trio"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "whirlybirds": {
+    "name": "Whirlybirds",
+    "aliases": [
+      "Whirlybirds"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hunter-skeens": {
+    "name": "Hunter Skeens",
+    "aliases": [
+      "Hunter Skeens"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "hyperius-bliska-trio": {
+    "name": "Hyperius Bliska Trio",
+    "aliases": [
+      "Hyperius Bliska Trio"
+    ],
+    "genres": [
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "intense": {
+    "name": "Intense",
+    "aliases": [
+      "Intense"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "iron-hank": {
+    "name": "Iron Hank",
+    "aliases": [
+      "Iron Hank"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "adam-moldovan": {
+    "name": "Adam Moldovan",
+    "aliases": [
+      "Adam Moldovan"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/theadammoldovan/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/adam.moldovan.90/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mike-mesteller": {
+    "name": "Mike Mesteller",
+    "aliases": [
+      "Mike Mesteller"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-new-soft-shoe": {
+    "name": "The New Soft Shoe",
+    "aliases": [
+      "The New Soft Shoe"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://thenewsoftshoe.com/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/thenewsoftshoe/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jake-hadden": {
+    "name": "Jake Hadden",
+    "aliases": [
+      "Jake Hadden"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "just-aj": {
+    "name": "Just AJ",
+    "aliases": [
+      "Just AJ"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "tyler-nance": {
+    "name": "Tyler Nance",
+    "aliases": [
+      "Tyler Nance"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "jake-worthington": {
+    "name": "Jake Worthington",
+    "aliases": [
+      "Jake Worthington"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "jason-aldean": {
+    "name": "Jason Aldean",
+    "aliases": [
+      "Jason Aldean"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "jaybe": {
+    "name": "Jaybe",
+    "aliases": [
+      "Jaybe"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jembaa-groove": {
+    "name": "Jembaa Groove",
+    "aliases": [
+      "Jembaa Groove"
+    ],
+    "genres": [
+      "african",
+      "funk-reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bent-string": {
+    "name": "Bent String",
+    "aliases": [
+      "Bent String"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "jim-e-brown": {
+    "name": "Jim E. Brown",
+    "aliases": [
+      "Jim E. Brown"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "joe-jordan": {
+    "name": "Joe Jordan",
+    "aliases": [
+      "Joe Jordan"
+    ],
+    "genres": [
+      "rock",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "joey-harkum": {
+    "name": "Joey Harkum",
+    "aliases": [
+      "Joey Harkum"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.joeyharkum.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/joeyharkum/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/72SpvqbeEYsAqZddWryI0m"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "johanna-samuels": {
+    "name": "Johanna Samuels",
+    "aliases": [
+      "Johanna Samuels"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.johannasamuels.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/johannasamuels"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/3NsEv68AsYdjKdCJ4AhHTa?si=6pnWKPhAQvCUEIMjqpuodA&nd=1&dlsi=dfce3e5116b44d0d"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "john-armstrong": {
+    "name": "John Armstrong",
+    "aliases": [
+      "John Armstrong"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "97-crosses": {
+    "name": "97 Crosses",
+    "aliases": [
+      "97 Crosses"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jordan-hope": {
+    "name": "Jordan Hope",
+    "aliases": [
+      "Jordan Hope"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "keep-flying": {
+    "name": "Keep Flying",
+    "aliases": [
+      "Keep Flying"
+    ],
+    "genres": [
+      "indie"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "kenny-chesney": {
+    "name": "Kenny Chesney",
+    "aliases": [
+      "Kenny Chesney"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "lamar-z": {
+    "name": "Lamar Z",
+    "aliases": [
+      "Lamar Z"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lang-lang-in-recital": {
+    "name": "Lang Lang in Recital",
+    "aliases": [
+      "Lang Lang in Recital"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "le-schlippy": {
+    "name": "Le Schlippy",
+    "aliases": [
+      "Le Schlippy"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "legacy-band": {
+    "name": "Legacy Band",
+    "aliases": [
+      "Legacy Band"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "duke-seneca-band": {
+    "name": "Duke Seneca Band",
+    "aliases": [
+      "Duke Seneca Band"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "joe-hunter": {
+    "name": "Joe Hunter",
+    "aliases": [
+      "Joe Hunter"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tim-matson": {
+    "name": "Tim Matson",
+    "aliases": [
+      "Tim Matson"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "up-til-4": {
+    "name": "Up Til 4",
+    "aliases": [
+      "Up Til 4"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "luke-bryan": {
+    "name": "Luke Bryan",
+    "aliases": [
+      "Luke Bryan"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "mikaela-davis": {
+    "name": "Mikaela Davis",
+    "aliases": [
+      "Mikaela Davis"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.mikaeladavis.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/mikaeladavis"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6CbL78A3tB1CPFoduF7UM5"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "minority-threat": {
+    "name": "Minority Threat",
+    "aliases": [
+      "Minority Threat"
+    ],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/minoritythreat/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/0DvxRbW6fpEOvMyTQNTrjC?si=zjIt5tw7RGK4MKuApVuHww"
+      },
+      {
+        "label": "Bandcamp",
+        "value": "https://minoritythreat.bandcamp.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "missy": {
+    "name": "Missy",
+    "aliases": [
+      "Missy"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "monica-robins-the-whiskey-kings": {
+    "name": "Monica Robins & The Whiskey Kings",
+    "aliases": [
+      "Monica Robins & The Whiskey Kings",
+      "Monica Robins and The Whiskey Kings"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "morning-glory": {
+    "name": "Morning Glory",
+    "aliases": [
+      "Morning Glory"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "nitebridge": {
+    "name": "Nitebridge",
+    "aliases": [
+      "Nitebridge"
+    ],
+    "genres": [
+      "rnb-soul",
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "myq-kaplan": {
+    "name": "Myq Kaplan",
+    "aliases": [
+      "Myq Kaplan"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "nataly-aukar": {
+    "name": "Nataly Aukar",
+    "aliases": [
+      "Nataly Aukar"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "nathan-hedges": {
+    "name": "Nathan Hedges",
+    "aliases": [
+      "Nathan Hedges"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://nathanhedges.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/nrhedges/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6CbL78A3tB1CPFoduF7UM5"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "noah": {
+    "name": "Noah",
+    "aliases": [
+      "Noah"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "o-a-r": {
+    "name": "O.A.R.",
+    "aliases": [
+      "O.A.R.",
+      "O.A.R"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "og-mook": {
+    "name": "OG Mook",
+    "aliases": [
+      "OG Mook"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ohio-drifters": {
+    "name": "Ohio Drifters",
+    "aliases": [
+      "Ohio Drifters"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "peter-antoniou": {
+    "name": "Peter Antoniou",
+    "aliases": [
+      "Peter Antoniou"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "peyton-ruddy": {
+    "name": "Peyton Ruddy",
+    "aliases": [
+      "Peyton Ruddy"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "plastic-wildflowers": {
+    "name": "Plastic Wildflowers",
+    "aliases": [
+      "Plastic Wildflowers"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "punchline": {
+    "name": "Punchline",
+    "aliases": [
+      "Punchline"
+    ],
+    "genres": [
+      "pop",
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.punchlion.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/punchlion/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UCqpOHIKMSe9cOpNmSfosSXw"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "qualified": {
+    "name": "Qualified",
+    "aliases": [
+      "Qualified"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "quinn-hoffman": {
+    "name": "Quinn Hoffman",
+    "aliases": [
+      "Quinn Hoffman"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "qwik-silver-trio": {
+    "name": "Qwik-Silver Trio",
+    "aliases": [
+      "Qwik-Silver Trio"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "r6-implant": {
+    "name": "R6 Implant",
+    "aliases": [
+      "R6 Implant"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rachel-shortt": {
+    "name": "Rachel Shortt",
+    "aliases": [
+      "Rachel Shortt"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ray-flanagan": {
+    "name": "Ray Flanagan",
+    "aliases": [
+      "Ray Flanagan"
+    ],
+    "genres": [
+      "acoustic"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "reverbious": {
+    "name": "Reverbious",
+    "aliases": [
+      "Reverbious"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "rhymin-n-stealin": {
+    "name": "Rhymin' N Stealin'",
+    "aliases": [
+      "Rhymin' N Stealin'",
+      "Rhymin N Stealin"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://rhyminnstealin.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rick-maguire-of-pile": {
+    "name": "Rick Maguire",
+    "aliases": [
+      "Rick Maguire (of Pile)",
+      "Rick Maguire"
+    ],
+    "genres": [
+      "rock",
+      "indie"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rick-szekelyi": {
+    "name": "Rick Szekelyi",
+    "aliases": [
+      "Rick Szekelyi"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots",
+      "blues"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.rickzmusic.com/home"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/rickszekelyi/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/@rickszekelyi502"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rickey-smiley-live": {
+    "name": "Rickey Smiley",
+    "aliases": [
+      "Rickey Smiley"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "river-maps": {
+    "name": "River Maps",
+    "aliases": [
+      "River Maps"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rock-salt-nails": {
+    "name": "Rock Salt & Nails",
+    "aliases": [
+      "Rock Salt & Nails",
+      "Rock Salt and Nails"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "roland-clark": {
+    "name": "Roland Clark",
+    "aliases": [
+      "Roland Clark"
+    ],
+    "genres": [
+      "dj",
+      "electronic-edm"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "romeo-maxwell-hard-copy": {
+    "name": "Romeo Maxwell & Hard Copy",
+    "aliases": [
+      "Romeo Maxwell & Hard Copy"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rumors": {
+    "name": "Rumors",
+    "aliases": [
+      "Rumors"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "russ-baum": {
+    "name": "Russ Baum",
+    "aliases": [
+      "Russ Baum"
+    ],
+    "genres": [
+      "folk-roots",
+      "rock",
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://rhyminnstealin.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/russbaum"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/@russbaumofficial"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "smug-llc": {
+    "name": "SMUG LLC",
+    "aliases": [
+      "SMUG LLC"
+    ],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "salt-n-pepa": {
+    "name": "Salt-N-Pepa",
+    "aliases": [
+      "Salt-N-Pepa"
+    ],
+    "genres": [
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "serious-fm": {
+    "name": "Serious FM",
+    "aliases": [
+      "Serious FM"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "shapes": {
+    "name": "Shapes",
+    "aliases": [
+      "Shapes"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "shawn-maxwell-quartet": {
+    "name": "Shawn Maxwell Quartet",
+    "aliases": [
+      "Shawn Maxwell Quartet"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "sinatra-soul": {
+    "name": "Sinatra & Soul",
+    "aliases": [
+      "Sinatra & Soul"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sincere-engineer": {
+    "name": "Sincere Engineer",
+    "aliases": [
+      "Sincere Engineer"
+    ],
+    "genres": [
+      "punk-ska",
+      "indie"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "ski-mask-malley": {
+    "name": "Ski Mask Malley",
+    "aliases": [
+      "Ski Mask Malley"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sleazus": {
+    "name": "Sleazus",
+    "aliases": [
+      "Sleazus"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "soul-glo": {
+    "name": "Soul Glo",
+    "aliases": [
+      "Soul Glo"
+    ],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://soulglophl.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/soulglophl/?hl=en"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/soulglophilly"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "soul-shake": {
+    "name": "Soul Shake",
+    "aliases": [
+      "Soul Shake"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "stay-inside": {
+    "name": "Stay Inside",
+    "aliases": [
+      "Stay Inside"
+    ],
+    "genres": [
+      "punk-ska",
+      "indie"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "stop-light-party": {
+    "name": "Stop Light Party",
+    "aliases": [
+      "Stop Light Party"
+    ],
+    "genres": [
+      "event"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tlc": {
+    "name": "TLC",
+    "aliases": [
+      "TLC"
+    ],
+    "genres": [
+      "rnb-soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "tano": {
+    "name": "Tano",
+    "aliases": [
+      "Tano"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "tayfuego": {
+    "name": "Tayfuego",
+    "aliases": [
+      "Tayfuego"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-don-wojtila-band": {
+    "name": "The Don Wojtila Band",
+    "aliases": [
+      "The Don Wojtila Band"
+    ],
+    "genres": [
+      "polka"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-evil-ways-band": {
+    "name": "The Evil Ways Band",
+    "aliases": [
+      "The Evil Ways Band"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-forerunners": {
+    "name": "The Forerunners",
+    "aliases": [
+      "The Forerunners"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-happy-hour": {
+    "name": "The Happy Hour",
+    "aliases": [
+      "The Happy Hour"
+    ],
+    "genres": [
+      "event"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-jack-wharff-band": {
+    "name": "The Jack Wharff Band",
+    "aliases": [
+      "The Jack Wharff Band"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-morning-bird": {
+    "name": "The Morning Bird",
+    "aliases": [
+      "The Morning Bird"
+    ],
+    "genres": [
+      "folk-roots",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.themorningbirdband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/themorningbirdband/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/TheMorningBirdCLE/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-pretty-reckless": {
+    "name": "The Pretty Reckless",
+    "aliases": [
+      "The Pretty Reckless"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-saints": {
+    "name": "The Saints",
+    "aliases": [
+      "The Saints"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-seven-wonders": {
+    "name": "The Seven Wonders",
+    "aliases": [
+      "The Seven Wonders"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "thomas-rhett": {
+    "name": "Thomas Rhett",
+    "aliases": [
+      "Thomas Rhett"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "uriah-g": {
+    "name": "Uriah G",
+    "aliases": [
+      "Uriah G"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "v2k": {
+    "name": "V2K",
+    "aliases": [
+      "V2K"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "volumes": {
+    "name": "VOLUMES",
+    "aliases": [
+      "VOLUMES"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "vaver": {
+    "name": "Vaver",
+    "aliases": [
+      "Vaver"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "westside-tony": {
+    "name": "Westside Tony",
+    "aliases": [
+      "Westside Tony"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "whiskey-outlaws": {
+    "name": "Whiskey Outlaws",
+    "aliases": [
+      "Whiskey Outlaws"
+    ],
+    "genres": [
+      "covers",
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "who-the-heck-was-moses-cleaveland": {
+    "name": "Who the Heck was Moses Cleaveland?",
+    "aliases": [
+      "Who the Heck was Moses Cleaveland?",
+      "Who the Heck was Moses Cleaveland"
+    ],
+    "genres": [
+      "event"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "xavier-wulf": {
+    "name": "Xavier Wulf",
+    "aliases": [
+      "Xavier Wulf"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "zakk-sabbath": {
+    "name": "Zakk Sabbath",
+    "aliases": [
+      "Zakk Sabbath"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "dark-chapel": {
+    "name": "Dark Chapel",
+    "aliases": [
+      "Dark Chapel"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bcmng": {
+    "name": "bcmng",
+    "aliases": [
+      "bcmng"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "gymclassheroes": {
+    "name": "gymclassheroes",
+    "aliases": [
+      "gymclassheroes"
+    ],
+    "genres": [
+      "hiphop-rap",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "lupe-fiasco": {
+    "name": "Lupe Fiasco",
+    "aliases": [
+      "Lupe Fiasco"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "b-side-grooves": {
+    "name": "B SIDE GROOVES",
+    "aliases": [
+      "B SIDE GROOVES"
+    ],
+    "genres": [
+      "event",
+      "dj"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "greater-cleveland-flute-society": {
+    "name": "Greater Cleveland Flute Society",
+    "aliases": [],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "damnaged-kids": {
+    "name": "Damnaged Kids",
+    "aliases": [],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ruin-the-moment": {
+    "name": "Ruin the Moment",
+    "aliases": [],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "redwood": {
+    "name": "Redwood",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "romeo-maxwell": {
+    "name": "Romeo Maxwell",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hard-copy": {
+    "name": "Hard Copy",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "delaneys": {
+    "name": "Delaney's",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dirty-mike-the-boyz": {
+    "name": "Dirty Mike & The Boyz",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-cuyahoga-slim-band": {
+    "name": "The Cuyahoga Slim Band",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "michael-crawley": {
+    "name": "Michael Crawley",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "wretched": {
+    "name": "Wretched",
+    "aliases": [],
+    "genres": [
+      "metal"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.wretchedtheband.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-convalescence": {
+    "name": "The Convalescence",
+    "aliases": [],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "cerebral-necrosis": {
+    "name": "Cerebral Necrosis",
+    "aliases": [],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "chaos-eater": {
+    "name": "Chaos Eater",
+    "aliases": [],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "waterloo-jazz-jam": {
+    "name": "Waterloo Jazz Jam",
+    "aliases": [],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+  "dj-sam-sinister": {
+    "name": "DJ Sam Sinister",
+    "aliases": [],
+    "genres": [
+      "dj",
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "raq-baby": {
+    "name": "RAQ Baby",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "abby-jeanne-the-shadow-band": {
+    "name": "Abby Jeanne & The Shadow Band",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "erykah-badu": {
+    "name": "Erykah Badu",
+    "aliases": [],
+    "genres": [
+      "rnb-soul",
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.erykahbadu.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-alchemist": {
+    "name": "The Alchemist",
+    "aliases": [],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "de-la-soul": {
+    "name": "De La Soul",
+    "aliases": [],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.delasoul.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "tyler-rich": {
+    "name": "Tyler Rich",
+    "aliases": [],
+    "genres": [
+      "country"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.tylerrich.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "danny-worsnop": {
+    "name": "Danny Worsnop",
+    "aliases": [],
+    "genres": [
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.dannyworsnop.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "book-banter-brigade": {
+    "name": "Book Banter Brigade",
+    "aliases": [],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mark-stuart": {
+    "name": "Mark Stuart",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "gs-harper": {
+    "name": "GS Harper",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "juanes": {
+    "name": "Juanes",
+    "aliases": [],
+    "genres": [
+      "latin",
+      "pop",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.juanes.net"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "hammered-hulls": {
+    "name": "Hammered Hulls",
+    "aliases": [],
+    "genres": [
+      "punk-ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "wrong-places": {
+    "name": "Wrong Places",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ritual-bronze": {
+    "name": "Ritual Bronze",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "swmrs": {
+    "name": "SWMRS",
+    "aliases": [],
+    "genres": [
+      "punk-ska",
+      "indie"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.swmrs.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-happy-return": {
+    "name": "The Happy Return",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bender": {
+    "name": "Bender",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "family-entertainment": {
+    "name": "Family Entertainment",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ensiferum": {
+    "name": "Ensiferum",
+    "aliases": [],
+    "genres": [
+      "metal"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.ensiferum.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "firewind": {
+    "name": "Firewind",
+    "aliases": [],
+    "genres": [
+      "metal"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.firewind.gr"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "poison-girl-friend": {
+    "name": "POiSON GiRL FRiEND",
+    "aliases": [
+      "Poison Girl Friend"
+    ],
+    "genres": [
+      "electronic-edm",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "computerwife": {
+    "name": "Computerwife",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-4411": {
+    "name": "The 4411",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-wailers": {
+    "name": "The Wailers",
+    "aliases": [],
+    "genres": [
+      "funk-reggae"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://thewailers.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "ayodylan": {
+    "name": "ayodylan",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dearest-friend": {
+    "name": "Dearest Friend",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "homestyle-dinner-rolls": {
+    "name": "Homestyle Dinner Rolls",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "julez-and-the-rollerz": {
+    "name": "Julez and The Rollerz",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kellen-erskine": {
+    "name": "Kellen Erskine",
+    "aliases": [],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "gamma-ray-jazz-blast": {
+    "name": "Gamma Ray Jazz Blast",
+    "aliases": [],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "richard-hatem": {
+    "name": "Richard Hatem",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "steelbandusa": {
+    "name": "SteelbandUSA",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "chris-hatton": {
+    "name": "Chris Hatton",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "pitbull": {
+    "name": "Pitbull",
+    "aliases": [
+      "Mr. 305",
+      "Mr. Worldwide"
+    ],
+    "genres": [
+      "pop",
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.pitbull.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "lil-jon": {
+    "name": "Lil Jon",
+    "aliases": [],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "guardin": {
+    "name": "Guardin",
+    "aliases": [],
+    "genres": [
+      "emo",
+      "hiphop-rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "nathan-henry": {
+    "name": "Nathan Henry",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "voodoo-funk": {
+    "name": "Voodoo Funk",
+    "aliases": [],
+    "genres": [
+      "funk-reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "thicarus": {
+    "name": "Thicarus",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "melt-banana": {
+    "name": "Melt-Banana",
+    "aliases": [],
+    "genres": [
+      "experimental",
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.melt-banana.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "yambag": {
+    "name": "Yambag",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "awesome-quest": {
+    "name": "AWESOME*QUEST!",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bikini-kill": {
+    "name": "Bikini Kill",
+    "aliases": [],
+    "genres": [
+      "punk-ska",
+      "alternative"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.bikinikill.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "ganser": {
+    "name": "Ganser",
+    "aliases": [],
+    "genres": [
+      "post-punk",
+      "alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "margaret-glaspy": {
+    "name": "Margaret Glaspy",
+    "aliases": [],
+    "genres": [
+      "singer-songwriter",
+      "indie"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.margaretglaspy.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "anna-tivel": {
+    "name": "Anna Tivel",
+    "aliases": [],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.annativel.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "bob-log-iii": {
+    "name": "Bob Log III",
+    "aliases": [],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "oongow": {
+    "name": "OONGOW",
+    "aliases": [
+      "OONGOW!!!"
+    ],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "david-janeway-trio": {
+    "name": "David Janeway Trio",
+    "aliases": [],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ashley-cooke": {
+    "name": "Ashley Cooke",
+    "aliases": [],
+    "genres": [
+      "country",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.ashleycooke.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "mike-polk": {
+    "name": "Mike Polk",
+    "aliases": [],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mariachi-el-bronx": {
+    "name": "Mariachi El Bronx",
+    "aliases": [],
+    "genres": [
+      "latin"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://mariachilelbronx.com"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+  "rush": {
+    "name": "RUSH",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "jeiku": {
+    "name": "Jeiku",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hey-thanks": {
+    "name": "hey thanks.",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "stickler": {
+    "name": "Stickler",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "deadweight-date": {
+    "name": "Deadweight Date",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "steven-rogers": {
+    "name": "Steven Rogers",
+    "aliases": [],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "kurt-johnson-dan-bode": {
+    "name": "Kurt Johnson & Dan Bode",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "caring-less": {
+    "name": "Caring Less",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "funeral-proposals": {
+    "name": "Funeral Proposals",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "pro-skater": {
+    "name": "Pro Skater",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mikey-silas": {
+    "name": "Mikey Silas",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tesseract-house-night": {
+    "name": "Tesseract House Night",
+    "aliases": [],
+    "genres": [
+      "electronic-edm",
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "backstage-pass": {
+    "name": "BACKSTAGE PASS",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "paul-sprawl": {
+    "name": "Paul Sprawl",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "the-jelly-duo": {
+    "name": "The Jelly Duo",
+    "aliases": [],
+    "genres": [
+      "acoustic",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.thejellyduo.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/thejellyduo/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/thejellyduo/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ronnie-clinton": {
+    "name": "Ronnie Clinton",
+    "aliases": [],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://ronnieclinton.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/ronnieclintonlive/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/RonnieClintonMusic/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "fun-girl": {
+    "name": "FunGirl",
+    "aliases": [
+      "FunGirl",
+      "Fun Girl"
+    ],
+    "genres": [
+      "acoustic",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://bnds.us/c3r4be"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/people/FunGirl-Band/100092683333260/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kristin-pepper": {
+    "name": "Kristin Pepper",
+    "aliases": [],
+    "genres": [],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "yappy-hour": {
+    "name": "Yappy Hour",
+    "aliases": [],
+    "genres": [
+      "event"
+    ],
+    "links": [],
+    "exclude": "yes"
+  },
+  "strauss-shostakovich": {
+    "name": "Strauss & Shostakovich",
+    "aliases": [],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "yes"
+  },
+  "chip-tha-ripper": {
+    "name": "Chip Tha Ripper",
+    "aliases": [
+      "Chip Tha Ripper",
+      "Chip The Ripper",
+      "King Chip"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.kingchip.com/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/0PA28tQBY65NmvLi0xvuX9?si=jbroOKxjS4-_d1vRhfFz6w"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/kingchip"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lil-jesse": {
+    "name": "Lil Jesse",
+    "aliases": [
+      "Lil Jesse",
+      "Lil' Jesse"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/5yJoeU05VVURsdHa0XXS30?si=VHU3iBZ_S0eMqCiDFIh2ew"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/lilxjesse/"
+      },
+      {
+        "label": "TikTok",
+        "value": "https://www.tiktok.com/@xliljesse"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lil-jesse": {
+    "name": "Lil Jesse",
+    "aliases": [
+      "Lil Jesse",
+      "Lil' Jesse"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/5yJoeU05VVURsdHa0XXS30?si=VHU3iBZ_S0eMqCiDFIh2ew"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/lilxjesse/"
+      },
+      {
+        "label": "TikTok",
+        "value": "https://www.tiktok.com/@xliljesse"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "anion-don": {
+    "name": "Anion Don",
+    "aliases": [
+      "Anion Don"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://linktr.ee/aniondon"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/aniondon"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "marquis-storm": {
+    "name": "Marquis Storm",
+    "aliases": [
+      "Marquis Storm"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/marcel_dear/"
+      },
+      {
+        "label": "TikTok",
+        "value": "https://www.tiktok.com/@marquisstorm"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "flow-fanatic": {
+    "name": "The Flow Fanatic",
+    "aliases": [
+      "The Flow Fanatic",
+      "Flow Fanatic"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/theflowfanatic/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6ZLeyqw1TB0Xc9RWSpCjhJ?si=d-Pxaqh2SWKVyudOoZ0CIA"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-kais": {
+    "name": "The Kais",
+    "aliases": [
+      "The Kais"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/wethekais"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/4m82IcwN7tlVz2H4uGTBoB"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "j-work": {
+    "name": "J-Work",
+    "aliases": [
+      "J-Work",
+      "J-Work Network"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/jworknetwork/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/7KwWyaCGFDvoqwOamZAptN"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hoodie-bk": {
+    "name": "Hoodie BK",
+    "aliases": [
+      "Hoodie BK",
+      "HoodieBK"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://hoodiebk.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/hoodiebk"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/7Jq6n62tVjnztEk6VFUu48"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "casse-laygo": {
+    "name": "Casse Laygo",
+    "aliases": [
+      "Casse Laygo"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/casselaygo/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/7Jq6n62tVjnztEk6VFUu48"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "young-genesis": {
+    "name": "Young Genesis",
+    "aliases": [
+      "Young Genesis"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/_young_genesis/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/4cQJo6cUrTdqtnbXy3nYfs"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "fm77": {
+    "name": "FM77",
+    "aliases": [
+      "FM77"
+    ],
+    "genres": [
+      "classic",
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Video Demo",
+        "value": "https://youtu.be/9SFA0upm0v0"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/FM77Cleveland/"
+      },
+      {
+        "label": "Website",
+        "value": "https://fm77cleveland.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "big-in-japan": {
+    "name": "BIG IN JAPAN",
+    "aliases": [
+      "BIG IN JAPAN"
+    ],
+    "genres": [
+      "covers",
+      "pop",
+      "hiphop-rap",
+      "dance-disco",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.biginjapanband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "http://instagram.com/biginjapancleveland"
+      },
+      {
+        "label": "Facebook",
+        "value": "http://www.facebook.com/biginjapanband"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "acoustic-catchall": {
+    "name": "Acoustic",
+    "aliases": [
+      "Acoustic"
+    ],
+    "genres": [
+      "acoustic"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "event-catchall": {
+    "name": "Event",
+    "aliases": [
+      "Market",
+      "Contest",
+      "Brunch",
+      "Fireworks",
+      "Patio Golf",
+      "Happy Hour",
+      "Tarot",
+      "Jeep Nite",
+      "Story Club Cleveland",
+      "Girl Dinner w/ Love Doesn't Shove",
+      "Bike Night",
+      "Free Play Wednesdays",
+      "Sourdough Workshop",
+      "Book Release",
+      "Book Club",
+      "Book Talk",
+      "Tango y algo mas"
+    ],
+    "genres": [
+      "event"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "movie-catchall": {
+    "name": "Movie / Film",
+    "aliases": [
+      "Secret Movie Night",
+      "Movies in the Park",
+      "Movie Night"
+    ],
+    "genres": [
+      "movie-film"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "comedy-catchall": {
+    "name": "Comedy",
+    "aliases": [
+      "Comedy",
+      "Improv",
+      "Joke and Mirrors"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "trivia-catchall": {
+    "name": "Trivia Games",
+    "aliases": [
+      "Trivia",
+      "Jeopardy Bar",
+      "Bingo"
+    ],
+    "genres": [
+      "trivia-games"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "theater-catchall": {
+    "name": "Theater",
+    "aliases": [
+      "Dominick Farinacci & Behind the Lines",
+      "The Addams Family"
+    ],
+    "genres": [
+      "theater"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "emo-catchall": {
+    "name": "Emo",
+    "aliases": [
+      "Emo"
+    ],
+    "genres": [
+      "emo"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "dj-catchall": {
+    "name": "DJ",
+    "aliases": [
+      "DJ",
+      "DJs"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "drag": {
+    "name": "Drag",
+    "aliases": [
+      "Drag"
+    ],
+    "genres": [
+      "drag"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "improv": {
+    "name": "Improv",
+    "aliases": [
+      "Improv"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "karaoke": {
+    "name": "Karaoke",
+    "aliases": [
+      "Karaoke"
+    ],
+    "genres": [
+      "karaoke"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "tribute": {
+    "name": "Tribute",
+    "aliases": [
+      "Tribute"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "music-trivi-aoke": {
+    "name": "Music Trivi-Aoke",
+    "aliases": [
+      "Trivi-Aoke",
+      "Trivia-oke",
+      "Trivi Aoke"
+    ],
+    "genres": [
+      "trivia-games",
+      "karaoke"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  }
+}

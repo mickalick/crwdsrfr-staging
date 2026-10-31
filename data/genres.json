@@ -1,0 +1,202 @@
+{
+  "acoustic": {
+    "label": "Acoustic",
+    "color": "#D19974"
+  },
+  "african": {
+    "label": "African",
+    "color": "#35A72F"
+  },
+  "alternative": {
+    "label": "Alternative",
+    "color": "#A572D3"
+  },
+  "blues": {
+    "label": "Blues",
+    "color": "#6187E0"
+  },
+  "bluegrass": {
+    "label": "Bluegrass",
+    "color": "#3DB89C"
+  },
+  "cabaret": {
+    "label": "Cabaret",
+    "color": "#CE47FF"
+  },
+  "chinese": {
+    "label": "Chinese",
+    "color": "#FF3D3D"
+  },
+  "classic": {
+    "label": "Classic",
+    "color": "#FF5C33"
+  },
+  "classical": {
+    "label": "Classical",
+    "color": "#EBEBEB"
+  },
+  "comedy": {
+    "label": "Comedy",
+    "color": "#D1D10A"
+  },
+  "country": {
+    "label": "Country",
+    "color": "#BB7777"
+  },
+  "covers": {
+    "label": "Covers",
+    "color": "#ADADAD"
+  },
+  "tribute": {
+    "label": "Tribute",
+    "color": "#ADADAD"
+  },
+  "dance-disco": {
+    "label": "Dance / Disco",
+    "color": "#FFFF70"
+  },
+  "dj": {
+    "label": "DJ",
+    "color": "#7AF500"
+  },
+  "drag": {
+    "label": "Drag",
+    "color": "#E85D9E"
+  },
+  "electronic-edm": {
+    "label": "Electronic / EDM",
+    "color": "#D1FE20"
+  },
+  "emo": {
+    "label": "Emo",
+    "color": "#8C8C8C"
+  },
+  "event": {
+    "label": "Event",
+    "color": "#FDC94F"
+  },
+  "experimental": {
+    "label": "Experimental",
+    "color": "#BBE901"
+  },
+  "family-kids": {
+    "label": "Family / Kids",
+    "color": "#A0DEAB"
+  },
+  "folk-roots": {
+    "label": "Folk / Roots",
+    "color": "#63CA73"
+  },
+  "funk-reggae": {
+    "label": "Funk / Reggae",
+    "color": "#FDEF4E"
+  },
+  "german": {
+    "label": "German",
+    "color": "#FF3D3D"
+  },
+  "greek": {
+    "label": "Greek",
+    "color": "#0096E0"
+  },
+  "hiphop-rap": {
+    "label": "Hip-Hop / Rap",
+    "color": "#D1D100"
+  },
+  "indie": {
+    "label": "Indie",
+    "color": "#9585E5"
+  },
+  "irish": {
+    "label": "Irish",
+    "color": "#00C230"
+  },
+  "jazz": {
+    "label": "Jazz",
+    "color": "#8080FF"
+  },
+  "karaoke": {
+    "label": "Karaoke",
+    "color": "#FFFFA3"
+  },
+  "klezmer": {
+    "label": "Klezmer",
+    "color": "#FCFCFC"
+  },
+  "latin": {
+    "label": "Latin",
+    "color": "#FDA631"
+  },
+  "magic": {
+    "label": "Magic",
+    "color": "#FFA375"
+  },
+  "metal": {
+    "label": "Metal",
+    "color": "#FF6D24"
+  },
+  "movie-film": {
+    "label": "Movie / Film",
+    "color": "#7EB3E7"
+  },
+  "nepalese": {
+    "label": "Nepalese",
+    "color": "#F35353"
+  },
+  "pianist": {
+    "label": "Pianist",
+    "color": "#FAFAFA"
+  },
+  "poetry": {
+    "label": "Poetry",
+    "color": "#DBBA57"
+  },
+  "polish": {
+    "label": "Polish",
+    "color": "#FF4D4D"
+  },
+  "polka": {
+    "label": "Polka",
+    "color": "#00D66B"
+  },
+  "pop": {
+    "label": "Pop",
+    "color": "#FF94C9"
+  },
+  "psych": {
+    "label": "Psychedelic",
+    "color": "#E675F5"
+  },
+  "punk-ska": {
+    "label": "Punk / Ska",
+    "color": "#E65555"
+  },
+  "rnb-soul": {
+    "label": "R&B / Soul",
+    "color": "#867BE5"
+  },
+  "rock": {
+    "label": "Rock",
+    "color": "#FE4D68"
+  },
+  "scottish": {
+    "label": "Scottish",
+    "color": "#FF3D3D"
+  },
+  "singer-songwriter": {
+    "label": "Singer / Songwriter",
+    "color": "#C37DE3"
+  },
+  "theater": {
+    "label": "Theater",
+    "color": "#FF8A8A"
+  },
+  "trivia-games": {
+    "label": "Trivia / Games",
+    "color": "#ADECA8"
+  },
+  "vocalist": {
+    "label": "Vocalist",
+    "color": "#CBAAE4"
+  }
+}

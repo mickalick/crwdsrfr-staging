@@ -1,0 +1,264 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+  <meta name="robots" content="noindex, nofollow">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>CRWD SRFR | Cleveland's Live Show Finder</title>
+		<meta name="description" content="Find live music and shows in Cleveland. Updated Sundays and Wednesdays.">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<!-- Accounts: these scripts must stay in this order, before events.js -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-core.js" defer></script>
+		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
+		<script src="/js/crwd-social.js" defer></script>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script src="js/events.js" defer></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    document.getElementById('calendarSettingsToggle').addEventListener('click', function() {
+      				document.getElementById('calendarSettings').classList.toggle('open');
+      				document.getElementById('calendarSettingsToggle').classList.toggle('open');
+    			});
+
+			    document.addEventListener('click', function(e) {
+			      const menu = document.getElementById('calendarSettings');
+			      const btn = document.getElementById('calendarSettingsToggle');
+
+			      if (!menu.contains(e.target) && !btn.contains(e.target)) {
+			        menu.classList.remove('open');
+			        btn.classList.remove('open');
+			      }
+			    });
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Home" href="/"></a>
+				<div id="siteNav"></div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="hero" class="page">
+				<div id="top" class="main">
+					<div id="calendarHeader">
+						<div id="intro">
+							<h2><em>Cleveland's</em> Live Show Finder</h2>
+							<p>Updated Sundays and Wednesdays.</p>
+							<p>Not seeing a venue or show? <a href="contact.html">Let us know.</a></p>
+						</div>
+						<div id="searchWrapper">
+							<input type="text" id="search" name="search" placeholder="Surf by venue, show, or act">
+							<button id="searchGo" type="button" aria-label="Search" onclick="applyFilters()"><span class="icon" id="ser"></span></button>
+							<button id="searchReset" type="button" aria-label="Clear search" onclick="resetSearch()"><span class="icon" id="clr"></span></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="calendar" class="page">
+				<div class="main">
+					<!-- Show History: the last two weeks of shows, on this same page (/?history; js/events.js) -->
+					<div id="historyBar">
+						<a id="historyLink" href="/?history">Recent History</a>
+					</div>
+					<p id="historyIntro" hidden>History includes the last two weeks of shows.<br/>Surf a recent show? Add it to your Show History with the + button.</p>
+
+					<div id="calendarSettingsBar">
+						<button type="button" class="settings-toggle" id="calendarSettingsToggle" aria-label="Open Settings">
+							<span class="icon" id="set"></span> View
+						</button>
+
+						<div id="calendarSettings">
+							
+							<div id="calendarToggle" aria-label="View Toggle">
+								<button type="button" class="toggle-button active" id="calendarToggleDay" aria-label="Day View">
+									Day
+								</button>
+								<button type="button" class="toggle-button" id="calendarToggleWeek" aria-label="Week View">
+									Week
+								</button>
+							</div>
+
+							<label class="checkbox-label" for="calendarShowGenres">
+								<input type="checkbox" id="calendarShowGenres" checked>
+								Display Genres (Beta)
+							</label>
+
+							<label for="sort-method">Sort by:</label>
+							<select id="calendarSortMethod" name="sort-method">
+							  <option value="venue-name">Venue Name (A-Z)</option>
+							  <option value="show-title">Show Title (A-Z)</option>
+							  <option value="show-time">Show Time (Earliest First)</option>
+							  <option value="hype-count">Hype Count (Most First)</option>
+							</select>
+
+						</div>
+
+
+						<button type="button" class="filter-toggle" id="calendarFilterToggle" aria-label="Show Filters">
+							Filters <span class="icon" id="fil"></span>
+						</button>
+
+					</div>
+
+					<div id="calendarFilterPanel">
+
+						<div class="filter-panel" id="calendarFilters" style="display:none;">
+
+							<div id="filterToggleLabel" class="filter-group-label">Filters Setting</div>
+							<div id="filterModeToggle" class="toggle-group" aria-label="Filter Mode">
+								<button type="button" class="toggle-button active" id="filterModeInclude" aria-label="Keep shows with selected filters">
+									Keep
+								</button>
+								<button type="button" class="toggle-button" id="filterModeExclude" aria-label="Remove shows with selected filters">
+									Remove
+								</button>
+							</div>
+
+							<div class="filter-group">
+								<div class="filter-group-label">Genre</div>
+								<div class="filter-row" id="calendarGenreFilters"></div>
+							</div>
+
+							<div class="filter-group">
+								<div class="filter-group-label">Venue</div>
+								<div class="filter-row" id="calendarVenueFilters"></div>
+							</div>
+
+							<div class="filter-group">
+								<div class="filter-group-label">Area</div>
+								<div class="filter-row" id="calendarAreaFilters"></div>
+							</div>
+
+							<div class="filter-group">
+								<div class="filter-group-label">Type</div>
+								<div class="filter-row" id="calendarTypeFilters"></div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div id="activeFiltersWrapper" style="display:none;">
+						<h2 id="activeFiltersLabel">Applied Filters:</h2>
+						<div id="activeFilters"></div>
+					</div>
+
+					<h4 class="subHead"><span>All shows for:</span></h4>
+					<div class="calendarWrapper">
+						<div id="calendarNav">
+							<div id="current">
+								<div id="currentSelector">
+									<span class="icon" id="cal"></span>
+									<input type="text" id="datePicker">
+								</div>
+								<h3>Day, Mon X, 20XX</h3>
+							</div>
+							<ul id="navArrows">
+								<li id="prevArrow"><span class="icon" id="bck"></span></li>
+								<li id="nextArrow"><span class="icon" id="fwd"></span></li>
+							</ul>
+						</div>
+						<div class="wave-top"></div>
+						<div class="wave-bottom"></div>
+						<div id="calendarCards">
+							<div id="calendarEnd">
+								<span id="emptyState" style="display:none;">No shows found :(</span>
+								<span id="withResults">That's all, folks<br/><a aria-label="Back to top of page" href="#top"><small>Back to Top</small></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="sponsors" class="page" style="display:none;">
+				<div class="main">
+					<p>Sponsors Space</p>
+				</div>
+			</section>
+			<div class="wave-footer"></div>
+			<footer>
+				<div class="footWrap">
+					<div id="social">
+						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
+					</div>
+					<ul id="bottomNav">
+						<li><a href="terms.html">Terms of Use</a></li>
+						<li><a href="privacy.html">Privacy Policy</a></li>
+					</ul>
+					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
+					<p><small>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+		
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+		
+	</body>
+
+	</html>
