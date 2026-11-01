@@ -1,0 +1,250 @@
+/* venue-map.css
+   Scoped under #venueMap so it can be linked site-wide without leaking
+   into your existing page styles. Adjust the custom properties at the
+   top to match your site's existing palette/fonts if you'd rather not
+   maintain a second type system.
+*/
+#venueMap {
+  --vm-ink:#101010;
+  --vm-paper:#FFF;
+  --vm-main:#62CBB8;
+  --vm-accent:#F9F976;
+  --vm-live:#3ddc97;
+  --vm-mute:#8a8580;
+  --vm-line: rgba(242,238,227,0.12);
+  --vm-card: #1a1a1a;
+
+  display:grid;
+  grid-template-columns: 360px 1fr;
+  height: 45vh;
+  min-height: 480px;
+  background: var(--vm-ink);
+  color: var(--vm-paper);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border: 1px solid var(--vm-line);
+  margin-top: 40px;
+}
+
+#venueMap, #venueMap *, #map, #map * { transition: none !important; }
+
+@media (max-width: 860px) {
+  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 78vh; display: flex; flex-direction: column;}
+
+  #venueMap .vm-sidebar { height: 60% !important; }
+  #venueMap .map-pane { height: 40% !important; }
+}
+
+#venueMap .vm-sidebar {
+  border-right: 1px solid var(--vm-line);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+#venueMap .vm-controls {
+  padding: 14px 20px;
+  padding-bottom: 0;
+}
+
+#venueMap .venueSearchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#venueMap .search {
+  width: 100%;
+  background: var(--vm-card);
+  border: 1px solid var(--vm-line);
+  color: var(--vm-paper);
+  padding: 10px 12px;
+  font-size: 13px;
+  border-radius: 2px 0 0 2px;
+  height: 40px;
+}
+#venueMap .search:focus { outline: none; border-color: var(--vm-accent); }
+
+#venueSearch {
+  margin-bottom: 6px !important;
+}
+
+#venueMap .filter-toggle {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  border: 1px solid var(--vm-line);
+  border-radius: 0 2px 2px 0;
+  color: var(--vm-mute);
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .15s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#venueMap .filter-toggle.active #fil {
+  background: var(--vm-accent) !important;
+}
+
+#venueMap .filter-toggle.active {
+  border-color: var(--vm-accent);
+}
+
+#venueMap .filter-row { display:flex; gap:4px; margin-top:10px; flex-wrap:wrap; }
+#venueMap .chip {
+  font-family:'Space Mono', monospace;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  padding:5px 9px;
+  border:1px solid var(--vm-line);
+  border-radius:20px;
+  color:var(--vm-paper);
+  cursor:pointer;
+  background:transparent;
+  transition: all .15s ease;
+}
+
+#venueMap .chip.active { border-color: var(--vm-accent) !important; color: var(--vm-accent); }
+
+#venueMap .venue-list { overflow-y:auto; flex:1; min-height:0; }
+#venueMap .venue-item {
+  padding:14px 20px;
+  border-bottom:1px solid var(--vm-line);
+  cursor:pointer;
+  position:relative;
+  transition: background .15s ease;
+}
+
+#venueMap .venue-item.selected { background: rgba(249,249,118,0.08); }
+#venueMap .venue-item.selected::before {
+  content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
+  background: var(--vm-accent);
+}
+#venueMap .v-name { font-weight:600; font-size:14px; }
+#venueMap .v-meta {
+  font-family:'Space Mono', monospace;
+  font-size:10.5px; color:var(--vm-mute);
+  margin-top:3px; text-transform:uppercase; letter-spacing:0.04em;
+}
+#venueMap .v-next { font-size:12px; margin-top:6px; color:var(--vm-paper); }
+#venueMap .v-next .dot {
+  display:inline-block; width:6px; height:6px; border-radius:50%;
+  background: var(--vm-live); margin-right:6px;
+  box-shadow: 0 0 0 0 rgba(61,220,151,.6);
+  animation: vm-pulse 2s infinite;
+}
+@keyframes vm-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(61,220,151,.5); }
+  70% { box-shadow: 0 0 0 6px rgba(61,220,151,0); }
+  100% { box-shadow: 0 0 0 0 rgba(61,220,151,0); }
+}
+#venueMap .v-empty { color: var(--vm-mute); font-style: italic; font-size:12px; margin-top:6px; }
+
+#venueMap .count {
+  padding:10px 20px;
+  font-family:'Space Mono', monospace;
+  font-size:12px; color: var(--vm-paper);
+  text-transform:uppercase;
+  border-bottom:1px solid var(--vm-line);
+  text-align: center;
+}
+
+#venueMap .map-pane { width:100%; height:100%; }
+
+/* InfoWindow content (Google renders this outside #venueMap's DOM subtree
+   in some cases, so these rules are intentionally not scoped) */
+.iw {
+  font-family:'Plus Jakarta Sans', sans-serif; color:#1a1a1a;
+  padding:2px 2px 6px; min-width:220px;
+}
+.iw-title { font-weight:700; font-size:14px; margin-bottom:2px; }
+.iw-meta {
+  font-family:'Space Mono', monospace; font-size:10px;
+  text-transform:uppercase;
+}
+.iw-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 4px 0;
+}
+.iw-links a {
+  display: flex;
+  align-items: center;
+  color: #101010;
+  text-decoration: underline;
+}
+.iw-links #ext {
+  height: 14px;
+  width: 14px;
+  background-color: #101010;
+  margin-left: 4px;
+}
+.iw-event { border-top:1px solid rgba(255,255,255,0.1); padding:7px 0; font-size:12px; }
+.iw-event a { color:#ff4d2e; text-decoration:none; font-weight:600; }
+.iw-event .when { color:#8a8580; font-family:'Space Mono', monospace; font-size:10px; }
+
+/* Marker pin */
+.pin-anchor {
+  position: relative;
+  width: 26px;
+  height: 31px; /* 26 * 1.2071 */
+  cursor: pointer;
+}
+.pin-anchor.selected {
+  width: 32px;
+  height: 39px; /* 32 * 1.2071 */
+}
+
+.pin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--vm-main);
+  border: 2px solid;
+  border-color: var(--vm-ink);
+  transform: rotate(-45deg);
+  transform-origin: center center;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+.pin-anchor.selected .pin {
+  height: 32px;
+  background-color: var(--vm-accent);
+}
+
+.pin .dot-inner { width:6px; height:6px; border-radius:50%; background-color:var(--vm-ink); transform: rotate(45deg); }
+.pin-anchor.selected .dot-inner { background-color: var(--vm-ink); }
+
+
+
+
+
+/* Mobile Hover Fix */
+
+@media (hover: hover) and (pointer: fine) {
+
+  #venueMap .filter-toggle:hover #fil {
+    background: var(--vm-accent) !important;
+  }
+
+  #venueMap .chip:hover {
+    color: var(--vm-paper);
+    border-color: var(--vm-main);
+  }
+
+  #venueMap .venue-item:hover {
+    background: rgba(255,255,255,0.03);
+  }
+
+  .iw-event a:hover {
+    text-decoration:underline;
+  }
+}

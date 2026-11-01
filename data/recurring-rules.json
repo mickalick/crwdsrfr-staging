@@ -1,0 +1,437 @@
+[
+  {
+    "id": "spotlight-acoustic-jam-night",
+    "venueId": "spotlight-cle",
+    "title": "Acoustic Jam Night! Hosted by Joshua Donato",
+    "weekday": 1,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-comedy-open-mic",
+    "venueId": "spotlight-cle",
+    "title": "Comedy Open Mic",
+    "weekday": 2,
+    "nth": null,
+    "time": "19:30",
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-jam-night",
+    "venueId": "spotlight-cle",
+    "title": "Jam Night! Hosted by Clockwork",
+    "weekday": 3,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-bluegrass-jam",
+    "venueId": "spotlight-cle",
+    "title": "Bluegrass Jam (hosted by David Mayfield)",
+    "weekday": 4,
+    "nth": [1],
+    "time": "20:00",
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-open-mic-theme",
+    "venueId": "spotlight-cle",
+    "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
+    "weekday": 4,
+    "nth": [2, 4],
+    "time": "20:00",
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-tk-jazz-odyssey",
+    "venueId": "spotlight-cle",
+    "title": "TK's Jazz Odyssey & Workshop",
+    "weekday": 4,
+    "nth": [3],
+    "time": "21:00",
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-weekend-nights-fri",
+    "venueId": "spotlight-cle",
+    "title": "Live Music, DJs, Special Nights, featuring...",
+    "weekday": 5,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-weekend-nights-sat",
+    "venueId": "spotlight-cle",
+    "title": "Live Music, DJs, Special Nights, featuring...",
+    "weekday": 6,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-house-techno",
+    "venueId": "spotlight-cle",
+    "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
+    "weekday": 0,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+
+  {
+    "id": "treehouse-karaoke-night",
+    "venueId": "treehouse",
+    "title": "Karaoke Night",
+    "weekday": 0,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-08-02",
+    "endDate": null
+  },
+
+
+  {
+    "id": "smedleys-wednesdays",
+    "venueId": "smedleys",
+    "title": "JP & Friends",
+    "weekday": 3,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-08-05",
+    "endDate": null
+  },
+  {
+    "id": "smedleys-thursdays",
+    "venueId": "smedleys",
+    "title": "Freebyrds Jam Night",
+    "weekday": 4,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-08-06",
+    "endDate": null
+  },
+
+
+  {
+    "id": "crocker-movies",
+    "venueId": "crocker-park",
+    "title": "Movies in the Park",
+    "weekday": 4,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-08-06",
+    "endDate": "2026-09-04"
+  },
+
+
+
+
+
+  {
+    "id": "velvet-jazz-trio-early",
+    "venueId": "velvet-tango-room",
+    "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+    "weekday": 5,
+    "nth": null,
+    "time": "17:30",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-jazz-trio-late",
+    "venueId": "velvet-tango-room",
+    "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+    "weekday": 5,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-jazz-trio-sat",
+    "venueId": "velvet-tango-room",
+    "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+    "weekday": 6,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+
+
+  {
+    "id": "velvet-don-phillips-mon",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Main Lounge)",
+    "weekday": 1,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-don-phillips-tue",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Main Lounge)",
+    "weekday": 2,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-don-phillips-wed",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Main Lounge)",
+    "weekday": 3,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-don-phillips-thu",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Main Lounge)",
+    "weekday": 4,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-don-phillips-thu-hh",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Main Lounge)",
+    "weekday": 4,
+    "nth": null,
+    "time": "17:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-don-phillips-fri-main",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Main Lounge)",
+    "weekday": 5,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-don-phillips-fri-back",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Back Room)",
+    "weekday": 5,
+    "nth": null,
+    "time": "19:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-don-phillips-sat-main",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Main Lounge)",
+    "weekday": 6,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-don-phillips-sat-back",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist Don Phillips (Back Room)",
+    "weekday": 6,
+    "nth": null,
+    "time": "19:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-david-blazer-fri-main",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist David Blazer (Main Lounge)",
+    "weekday": 5,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-david-blazer-fri-back",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist David Blazer (Back Room)",
+    "weekday": 5,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-david-blazer-sat-main",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist David Blazer (Main Lounge)",
+    "weekday": 6,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+  {
+    "id": "velvet-david-blazer-sat-back",
+    "venueId": "velvet-tango-room",
+    "title": "Pianist David Blazer (Back Room)",
+    "weekday": 6,
+    "nth": null,
+    "time": "21:00",
+    "startDate": "2026-08-10",
+    "endDate": null
+  },
+
+
+
+
+  {
+    "id": "twist-monday-matinee",
+    "venueId": "twist-social-club",
+    "title": "Monday Matinee Showtunes Happy Hour",
+    "weekday": 1,
+    "nth": null,
+    "time": "16:00",
+    "startDate": "2026-08-24",
+    "endDate": null
+  },
+  {
+    "id": "twist-trivia-tuesdays",
+    "venueId": "twist-social-club",
+    "title": "LGBTQ+ Trivia Tuesdays",
+    "weekday": 2,
+    "nth": null,
+    "time": "19:00",
+    "startDate": "2026-08-25",
+    "endDate": null
+  },
+  {
+    "id": "twist-karaoke-wednesdays",
+    "venueId": "twist-social-club",
+    "title": "Karaoke Wednesdays",
+    "weekday": 3,
+    "nth": null,
+    "time": "21:30",
+    "startDate": "2026-08-26",
+    "endDate": null
+  },
+  {
+    "id": "twist-malibus-dreamhouse",
+    "venueId": "twist-social-club",
+    "title": "Malibu's Dreamhouse Drag Show",
+    "weekday": 4,
+    "nth": [1, 3],
+    "time": "20:30",
+    "startDate": "2026-08-27",
+    "endDate": null
+  },
+  {
+    "id": "twist-dj-saturdays",
+    "venueId": "twist-social-club",
+    "title": "DJ Mike Filly",
+    "weekday": 6,
+    "nth": null,
+    "time": "22:00",
+    "startDate": "2026-08-29",
+    "endDate": null
+  },
+  {
+    "id": "twist-tea-dances",
+    "venueId": "twist-social-club",
+    "title": "Tea Dances",
+    "weekday": 0,
+    "nth": null,
+    "time": "16:00",
+    "startDate": "2026-08-30",
+    "endDate": null
+  },
+
+
+
+
+
+  {
+    "id": "nano-brew-trivia",
+    "venueId": "nano-brew",
+    "title": "Trivia Wednesdays",
+    "weekday": 3,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-08-26",
+    "endDate": null
+  },
+
+  {
+    "id": "bird-of-paradise-karaoke",
+    "venueId": "bird-of-paradise",
+    "title": "KARAOKE",
+    "weekday": 4,
+    "nth": [1, 3],
+    "time": "20:00",
+    "startDate": "2026-09-03",
+    "endDate": null
+  },
+
+
+
+
+
+  {
+    "id": "coda-collective",
+    "venueId": "coda",
+    "title": "Collective Night - Poetry, Singer/Songwriter, Spoken Word, Hiphop",
+    "weekday": 3,
+    "nth": null,
+    "time": "19:30",
+    "startDate": "2026-09-30",
+    "endDate": null
+  },
+
+
+
+
+
+  {
+    "id": "riffs-tango-night",
+    "venueId": "riffs",
+    "title": "Tango Night",
+    "weekday": 3,
+    "nth": [1, 3],
+    "time": "19:30",
+    "startDate": "2026-10-07",
+    "endDate": null
+  },
+  {
+    "id": "riffs-open-decks",
+    "venueId": "riffs",
+    "title": "Open Decks w/ DJ Dommie Salami",
+    "weekday": 4,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-10-08",
+    "endDate": null
+  }
+
+
+
+]
